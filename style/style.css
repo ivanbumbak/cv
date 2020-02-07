@@ -28,11 +28,7 @@ a {
   align-items: flex-end;
   width: 100%;
   background-color: rgba(34, 34, 34, 0.05);
-  box-shadow: 0 1px 1px rgba(34, 34, 34, 0.3),
-              0 2px 2px rgba(34, 34, 34, 0.3),
-              0 3px 3px rgba(34, 34, 34, 0.3),
-              0 4px 4px rgba(34, 34, 34, 0.3);
-             
+  box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
 }
 
 /* Abbv image */
@@ -49,7 +45,7 @@ a {
   -webkit-transition: ease-in;
   -moz-transition: ease-in;
   transition: ease-in;
-  transition-duration: 1s;
+  transition-duration: 0.8s;
 }
 
 #social-icons i:hover {
@@ -203,40 +199,44 @@ a {
 }
 
 .project-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
+  width: 100%;
 }
 
-/* Project list settings */
-.project-one, .project-two, .project-three {
-  width: 20%;
-  height: 125px;
-  -ms-transform: skew(310deg);
+.section-third {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid #000;
+  float: left;
+  height: 100px;
+}
+
+/* Project list settings 
+#project-one, #project-two, #project-three {
+  width: 75%;
+  height: 75px;
+ /* -ms-transform: skew(310deg);
   -webkit-transform: skew(310deg);
   transform: skew(310deg);
-}
+} */
 
-.project-one {
+/*
+#project-one {
   background-image: url("https://via.placeholder.com/300");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.project-two {
+#project-two {
   background-image: url("https://via.placeholder.com/200");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.project-three {
+#project-three {
   background-image: url("https://via.placeholder.com/100");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
