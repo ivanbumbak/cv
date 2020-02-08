@@ -147,21 +147,17 @@ a {
 
 /* Experience section 
  * Education section
- * Projects section */
+ * Projects section default settings */
 .experience-section,
 .education-section,
-.project-section {
+.projects-section {
   width: 100%;
   text-align: center;
 }
 
-.experience-section {
-  height: 50%;
-}
-
 .experience-section h1,
 .education-section h1,
-.project-section h1 {
+.projects-section h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
   text-transform: uppercase;
@@ -198,10 +194,6 @@ a {
   font-size: 1em;
 }
 
-.project-list {
-  width: 100%;
-}
-
 .section-third {
   width: 30%;
   margin: 10px;
@@ -209,34 +201,3 @@ a {
   float: left;
   height: 100px;
 }
-
-/* Project list settings 
-#project-one, #project-two, #project-three {
-  width: 75%;
-  height: 75px;
- /* -ms-transform: skew(310deg);
-  -webkit-transform: skew(310deg);
-  transform: skew(310deg);
-} */
-
-/*
-#project-one {
-  background-image: url("https://via.placeholder.com/300");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#project-two {
-  background-image: url("https://via.placeholder.com/200");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#project-three {
-  background-image: url("https://via.placeholder.com/100");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}*/
