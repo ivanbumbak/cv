@@ -4,6 +4,10 @@ body {
   background-color: #f5f5f5;
 }
 
+h1 {
+  margin: 10px 0;
+}
+
 p {
   margin: 0;
 }
@@ -11,6 +15,10 @@ p {
 a {
   text-decoration: none;
   color: #000;
+}
+
+ul {
+  padding: 0;
 }
 
 .container {
@@ -132,13 +140,6 @@ a {
   line-height: 1.5;
 }
 
-/* Job status styling */
-#job-status {
-  text-decoration: underline;
-  font-weight: 600;
-  color: #8a0000;
-}
-
 /* Social icons settings */
 #social-icons i {
   color: #1a1a1a;
@@ -170,6 +171,10 @@ a {
   text-align: center;
 }
 
+.education-section {
+  background-color: #fefefe;
+}
+
 .experience-section h1,
 .education-section h1,
 .projects-section h1 {
@@ -178,29 +183,50 @@ a {
   text-transform: uppercase;
 }
 
+#education, #projects {
+  padding-top: 15px;
+}
+
 /* Default section half settings */
 .section-half {
   width: 50%;
   text-align: left;
-  margin-bottom: 35px;
 }
 
 .section-half h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.75em;
-  padding-left: 25px;
   text-transform: uppercase;
 }
 
 .section-half ul {
   list-style-type: none;
-  margin-left: 5px;
 }
 
 .section-half li {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.35em;
   font-weight: 700;
+}
+
+/* Job status, category, duration and description styling */
+#job-status {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #8a0000;
+}
+
+#job-category {
+  color: #8a0000;
+}
+
+#job-duration {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#job-description {
+  margin-top: 10px;
 }
 
 .section-half p {
