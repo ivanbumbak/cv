@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 
 h1 {
@@ -21,15 +21,22 @@ ul {
   padding: 0;
 }
 
+/* Container default styling */
 .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: #fafafa;
 }
 
 /* Header styling */
@@ -40,7 +47,8 @@ ul {
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  background-color: rgba(34, 34, 34, 0.05);
+  background-color: #fff;
+  /*background-color: rgba(34, 34, 34, 0.05);*/
   box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
 }
 
@@ -50,7 +58,7 @@ ul {
   margin: 15px;
 }
 
-/* Navigation */
+/* Navigation default styling */
 .main-nav {
   margin-right: 15px;
 }
@@ -71,7 +79,7 @@ ul {
   transition-duration: 0.2s;
 }
 
-/* Default 'a' styling */
+/* Default main navigation 'a' styling */
 .main-nav a {
   color: #1a1a1a;
   display: inline-block;
@@ -82,7 +90,7 @@ ul {
   transition-duration: 0.3s;
 }
 
-/* Hover 'a' styling */
+/* Hover main navigation 'a' styling */
 .main-nav a:hover {
   color: #8a0000;
   -webkit-transition: ease-in;
@@ -126,7 +134,7 @@ ul {
   height: 70vh;
 }
 
-/* Main profile photo */
+/* Main profile image */
 #profile-img {
   border: 2px solid #8a0000;
   border-radius: 50%;
@@ -163,16 +171,12 @@ ul {
 
 /* Experience section 
  * Education section
- * Projects section default settings */
+ * Projects section default styling */
 .experience-section,
 .education-section,
 .projects-section {
   width: 100%;
   text-align: center;
-}
-
-.education-section {
-  background-color: #fefefe;
 }
 
 .experience-section h1,
@@ -187,16 +191,41 @@ ul {
   padding-top: 15px;
 }
 
-/* Default section half settings */
-.section-half {
-  width: 50%;
+/* Default section half styling */
+.section-half,
+.section-third {
+  width: 47%;
+  box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
+  background-color: #fff;
   text-align: left;
+  margin-top: 15px;
+  padding: 0 10px;
 }
 
-.section-half h2 {
+.section-third {
+  width: 30%;
+}
+
+.section-half h2,
+.section-third h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.75em;
+  font-size: 1.60em;
   text-transform: uppercase;
+}
+
+.section-third h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 1.40em;
+  margin-bottom: 0;
+}
+
+.section-third h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0;
 }
 
 .section-half ul {
@@ -205,13 +234,18 @@ ul {
 
 .section-half li {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.35em;
+  font-size: 1.20em;
   font-weight: 700;
+}
+
+.section-half p,
+.section-third p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
 }
 
 /* Job status, category, duration and description styling */
 #job-status {
-  text-decoration: underline;
   font-weight: 600;
   color: #8a0000;
 }
@@ -222,21 +256,19 @@ ul {
 
 #job-duration {
   font-weight: 600;
-  font-size: 1em;
+  font-size: 0.8em;
+  color: #8a0000;
+  margin-bottom: 5px;
 }
 
 #job-description {
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
-.section-half p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-}
-
+/* Default section third styling 
 .section-third {
   width: 30%;
   margin: 10px;
   border: 1px solid #000;
   height: 100px;
-}
+} */
