@@ -272,3 +272,11 @@ ul {
   border: 1px solid #000;
   height: 100px;
 } */
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
