@@ -194,6 +194,11 @@ ul {
 /* Default section half styling */
 .section-half,
 .section-third {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
   width: 47%;
   box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
   background-color: #fff;
@@ -211,6 +216,7 @@ ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.60em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .section-third h2 {
@@ -226,6 +232,7 @@ ul {
   font-weight: 300;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .section-half ul {
@@ -262,7 +269,7 @@ ul {
 }
 
 #job-description {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 /* Default section third styling 
@@ -274,9 +281,5 @@ ul {
 } */
 
 .desc {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
+ text-align: left;
 }
