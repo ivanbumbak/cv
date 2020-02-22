@@ -30,7 +30,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   margin-bottom: 25px;
   background-color: #fafafa;
@@ -190,26 +190,20 @@ a {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 30%;
   box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
   background-color: #fff;
   text-align: left;
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 0 10px;
-}
-
-.section-third h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.60em;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .section-third h2 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 1.40em;
+  text-transform: uppercase;
   margin-bottom: 0;
 }
 
