@@ -185,6 +185,40 @@ a {
 }
 
 /* Default section half styling */
+.section-half {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 45%;
+  box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
+  background-color: #fff;
+}
+
+.section-half h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.section-half h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+.section-half p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-half img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Default section third styling */
 .section-third {
   display: flex;
   flex-direction: column;
@@ -261,4 +295,3 @@ a {
 .desc {
  text-align: left;
 }
-
