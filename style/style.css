@@ -295,3 +295,7 @@ a {
 .desc {
  text-align: left;
 }
+
+#project-description {
+  position: absolute;
+}
