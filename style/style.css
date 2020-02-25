@@ -190,9 +190,11 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  position: relative;
   width: 45%;
   box-shadow: 0 8px 8px 0 rgba(37, 37, 37, 0.2);
   background-color: #fff;
+  height: 270px;
 }
 
 .section-half h2 {
@@ -216,6 +218,16 @@ a {
 .section-half img {
   width: 100%;
   height: 100%;
+}
+
+.section-half ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-half li {
+  float: left;
+  margin-right: 10px;
 }
 
 /* Default section third styling */
@@ -296,6 +308,15 @@ a {
  text-align: left;
 }
 
-#project-description {
+/* Show on mouse over project description */
+#gambi-description, #apartments-description {
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
+  background-color: rgba(250, 250, 250, 0.85);
+  width: 100%;
+  height: 100%;
 }

@@ -9,4 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-//Show project description on mouseover
+//Toggle visibility project description on mouseover
+function toggleVisibility(id, visibility) {
+    document.getElementById(id).style.display = visibility;
+}
