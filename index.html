@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/40ca51ed50.js" crossorigin="anonymus"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <header>
     <!-- Logo and social icons -->
@@ -22,6 +23,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
       </nav>
       </div>
@@ -31,7 +33,7 @@
     <div class="hero-section">
       <!-- Profile picture -->
       <div class="profile-img">
-        <img id="profile-img" src="https://via.placeholder.com/200">
+        <img id="profile-img" src="https://via.placeholder.com/225">
       </div>
 
       <!-- Short biography -->
@@ -86,7 +88,7 @@
               <h4>Polytechnic of Šibenik</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -99,7 +101,7 @@
               <h4>City of Šibenik</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -112,7 +114,7 @@
               <h4>Polytechnic of Šibebnik</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -125,7 +127,7 @@
               <h4>Alumni Association</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -138,7 +140,7 @@
               <h4>City of Šibebnik</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -151,7 +153,7 @@
               <h4>Polytechnic of Šibebnik</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -176,7 +178,7 @@
               <h4>Polytechnic of Šibenik - Master's Degree</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -189,7 +191,7 @@
               <h4>Slovak University of Agriculture - Erasmus+</h4>
             </div>
           
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -202,7 +204,7 @@
               <h4>Polytechnic of Šibenik - Bachelor's Degree</h4>
             </div>
             
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -215,7 +217,7 @@
               <h4>Oracle Academy</h4>
             </div>
             
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -228,7 +230,7 @@
               <h4>Oracle Academy</h4>
             </div>
             
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -241,7 +243,7 @@
               <h4>Oracle Academy</h4>
             </div>
             
-            <div class="desc">
+            <div class="description">
               <p id="job-description">The Quick Brown Fox jumping on a trampoline listens to Selena Gomez</p>
               <p id="job-duration">October 2017 - February 2018</p>
             </div>
@@ -258,30 +260,88 @@
       <div class="container">
         <!-- Flex content -->
         <div class="wrapper">
-          <div class="section-half" onmouseover="toggleVisibility('gambi-description', 'flex');" onmouseout="toggleVisibility('gambi-description', 'none');">
-            <img src="./img/gambi-project.png">
-            <div id="gambi-description">
-              <h2>Gambi d.o.o.</h2>
-              <p>The Quick Brown Fox jumping on a trampoline listens to Selena Gomez.</p>
-              <ul>
-                <li>WordPress</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-            </div>
+          <div class="section-half">
+            <div class="project">
+              <img src="./img/gambi-project.png">
+                <div class="project-description">
+                  <h2>Gambi d.o.o.</h2>
+                  <p>The Quick Brown Fox jumping on a trampoline listens to Selena Gomez.</p>
+                  <ul>
+                    <li>WordPress</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div><!-- /Project description end -->
+              </div><!-- /Project end -->
           </div><!-- /Section half end -->
 
-          <div class="section-half" onmouseover="toggleVisibility('apartments-description', 'flex');" onmouseout="toggleVisibility('apartments-description', 'none');">
-            <img src="./img/apartments-sandra.png">
-            <div id="apartments-description">
-              <P>This text says APARTMANI SANDRA!!!</P>
-            </div>
-          </div><!-- /Section half end -->
+          <div class="section-half">
+            <div class="project">
+              <img src="./img/apartments-sandra.png">
+                <div class="project-description">
+                  <h2>Apartments Sandra</h2>
+                  <p>The Quick Brown Fox jumping on a trampoline listens to Selena Gomez.</p>
+                  <ul>
+                    <li>WordPress</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div></a><!-- /Project description end -->
+              </div><!-- /Project end -->
+            </div><!-- /Section half end -->
+
+            <div class="section-half">
+              <div class="project">
+                <img src="./img/vus-record.png">
+                  <div class="project-description">
+                    <h2>Bachelor Thesis</h2>
+                    <p>The Quick Brown Fox jumping on a trampoline listens to Selena Gomez.</p>
+                    <p>MVC Web Application</p>
+                  </div><!-- /Project description end -->
+                </div><!-- /Project end -->
+            </div><!-- /Section half end -->
+
+            <div class="half-section-half">
+              <div class="project">
+                <img src="./img/android.jpeg">
+                  <div class="project-description">
+                    <h2>Master thesis</h2>
+                    <p>The Quick Brown Fox jumping on a trampoline listens to Selena Gomez.</p>
+                    <p>Android Application</p>
+                  </div><!-- /Project description end -->
+                </div><!-- /Project end -->
+            </div><!-- /Section half end -->
+
+            <div class="half-section-half">
+              <div class="project">
+                <img src="./img/android.jpeg">
+                  <div class="project-description">
+                    <h2>Briscola app</h2>
+                    <p>The Quick Brown Fox jumping on a trampoline listens to Selena Gomez.</p>
+                    <p>Android Application</p>
+                  </div><!-- /Project description end -->
+                </div><!-- /Project end -->
+            </div><!-- /Section half end -->
         </div><!-- /Wrapper end -->
       </div><!-- /Container end -->
-    </div><!-- /Projects section end-->
+    </div><!-- /Projects section end -->
+
+    <!-- Skills section -->
+    <div class="skills-section">
+      <h1 id="skills">Skills</h1>
+
+      <!-- Container max width 1280px -->
+      <div class="container">
+        <!-- Flex content -->
+        <div class="wrapper">
+        </div><!-- /Wrapper end -->
+      </div><!-- /Container end -->
+    </div><!-- /Skills section end -->
   </body>
   <footer>
+    <hr id="hr-footer">
     <div class="footer">
       <p>&copy; 2020 Ivan Bumbak. All rights reserved.</p>
     </div>

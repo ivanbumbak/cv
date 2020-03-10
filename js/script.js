@@ -1,4 +1,4 @@
-//Smooth scrolling on clik
+//Smooth scrolling on click
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,8 +8,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-//Toggle visibility project description on mouseover
-function toggleVisibility(id, visibility) {
-    document.getElementById(id).style.display = visibility;
-}
