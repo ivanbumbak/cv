@@ -17,7 +17,7 @@ a {
   display: flex;
   max-width: 1280px;
   width: 100%;
-  margin: 10px auto; }
+  margin: 0 auto; }
 
 .wrapper {
   display: flex;
@@ -204,10 +204,48 @@ a {
     font-size: 0.8em; }
 
 .section-fifth {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
   width: 15%;
-  margin: 15px; }
+  margin: 25px; }
   .section-fifth i {
-    font-size: 5em; }
+    font-size: 3.5em; }
+  .section-fifth p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em; }
+
+#html-icon {
+  color: #de4b25; }
+
+#css-icon {
+  color: #1a70b5; }
+
+#sass-icon {
+  color: #c76495; }
+
+#wordpress-icon {
+  color: #31353a; }
+
+#git-icon {
+  color: #ec4d28; }
+
+#microsoft-icon {
+  color: #00a8e8; }
+
+#database-icon {
+  color: #018478; }
+
+#java-icon {
+  color: #e42c2D; }
+
+#teaching-icon {
+  color: #644b9d; }
+
+#teamwork-icon {
+  color: #ecab43; }
 
 .footer {
   display: flex;
