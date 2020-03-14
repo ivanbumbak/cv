@@ -222,6 +222,14 @@ a {
     }
 }
 
+.section-fifth {
+    width: 15%;
+    margin: 15px;
+    i {
+        font-size: 5em;
+    }
+}
+
 //Footer default styling
 .footer {
     @include nw-flex-row;

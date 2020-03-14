@@ -203,6 +203,12 @@ a {
     font-family: "Open Sans", sans-serif;
     font-size: 0.8em; }
 
+.section-fifth {
+  width: 15%;
+  margin: 15px; }
+  .section-fifth i {
+    font-size: 5em; }
+
 .footer {
   display: flex;
   flex-direction: row;
