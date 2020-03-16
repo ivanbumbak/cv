@@ -362,7 +362,7 @@ a {
 //Job status, job duration and job description default styling
 #job-status {
     font-weight: 600;
-    color: $highlight-font-color;
+    color: $highlight-color;
 }
 
 #job-description {
@@ -373,7 +373,7 @@ a {
 #job-duration {
     font-weight: 600;
     font-size: 0.8em;
-    color: $highlight-font-color;
+    color: $highlight-color;
     margin-bottom: 5px;
 }
 
