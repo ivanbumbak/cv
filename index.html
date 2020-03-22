@@ -31,117 +31,135 @@
   <body>
     <!-- Biography section -->
     <div class="hero-section">
-      <!-- Profile picture -->
-      <div class="profile-img">
-        <img id="profile-img" src="img/profile-img.jpg">
-      </div>
+     <!-- Profile heading -->
+     <div class="profile-heading">
+      <h1 id="heading">Ivan Bumbak</h1>
+      <h4 id="subheading">IT Technician @ Green Energy</h4>
+     </div>
+     <!-- My profile --> 
+     <div class="profile">
+        <!-- Profile picture -->
+        <div class="profile-img">
+          <img id="profile-img" src="img/profile-img.jpg">
+        </div>
+  
+        <!-- Short biography -->
+        <div class="profile-bio">
+          <p id="short-bio"><span id="nutshell">In a nutshell...</span><br>
+            Born on February 6, 1994 in <b>Šibenik, Croatia</b>!<br>
+            Educated at <b>Polytechnic of Šibenik, Šibenik</b>!<br>
+            <b>Cats, food and hiking</b> are my stress relief!<br>
+            In search for a new <b>IT job</b>!<br><br></p>
+        </div>
+      </div><!-- /My profile end -->
 
-      <!-- Short biography -->
-      <div class="profile-bio">
-        <p id="short-bio">Named <b>Ivan Bumbak</b>, February 6 1994.<br>
-          Born and raised in <b>Šibenik, Croatia</b>!<br>
-          Educated at <b>Polytechnic of Šibenik, Šibenik</b>!<br>
-          <b>Cats, food and hiking</b> are my stress relief!<br>
-          <b>Current status:</b> Searching for <b>IT job</b>!<br><br></p>
-
-          <p style="font-family: Open Sans, sans-serif;">Swing by at:</p>
-          <!-- Email icon -->
-          <a title="Send email" id="social-icons" href="#">
-            <i class="fas fa-envelope"></i>
-          </a>
-          
-          <!-- LinkedIn icon -->
-          <a id="social-icons" title="LinkedIn Profile" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-
-          <!-- GitHub icon -->
-          <a id="social-icons" title="GitHub Profile" href="#">
-            <i class="fab fa-github"></i>
-          </a>
-
-          <!-- Instagram icon -->
-          <a id="social-icons" title="Instagram Profile" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <!-- Facebook icon -->
-          <a id="social-icons" title="Facebook Profile" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-      </div>
+        <!-- Swing by at -->
+        <div class="contact">
+          <!--<p style="font-family: Open Sans, sans-serif;">Swing by at:</p>-->
+            <!-- Email icon -->
+            <a title="Send email" id="social-icons" href="#">
+              <i class="fas fa-envelope" id="email-icon"></i>
+            </a>
+            
+            <!-- LinkedIn icon -->
+            <a id="social-icons" title="LinkedIn Profile" href="#">
+              <i class="fab fa-linkedin" id="linkedin-icon"></i>
+            </a>
+  
+            <!-- GitHub icon -->
+            <a id="social-icons" title="GitHub Profile" href="#">
+              <i class="fab fa-github" id="github-icon"></i>
+            </a>
+  
+            <!-- Instagram icon -->
+            <a id="social-icons" title="Instagram Profile" href="#">
+              <i class="fab fa-instagram" id="instagram-icon"></i>
+            </a>
+  
+            <!-- Facebook icon -->
+            <a id="social-icons" title="Facebook Profile" href="#">
+              <i class="fab fa-facebook" id="facebook-icon"></i>
+            </a>
+        </div>
     </div><!-- /Hero section end -->
 
-    <!-- Timeline -->
-    <div class="timeline">
-      <!-- Left side -->
-      <div class="timeline-container left">
-        <div class="timeline-content">
-          <img src="https://via.placeholder.com/576x175" alt="">
-          <h2>IT Intern</h2>
-          <div class="timeline-date">October 2018</div>
-          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
-            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-            habeo iusto primis ea eam.
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
-            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-            habeo iusto primis ea eam.</p>
-        </div>
-      </div>
+    <!-- Timeline section -->
+    <section class="timeline">
+      <!-- Container max width 1280px -->
+      <div class="timeline-container">
+        <!-- Timeline card -->
+        <div class="timeline-item">
+          <div class="timeline-point"></div>
+          <!-- Timeline content -->
+          <div class="timeline-content">
+            <img src="img/cv-web.png" alt="Web CV" class="timeline-image">
+            <h2>CV in a web form</h2>
+            <div class="timeline-date">April 2020</div>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.</p>
+              <a href="#" class="visit-page-btn">Visit page</a>
+          </div><!-- /Timeline content end -->
+        </div><!-- /Timeline card end -->
 
-      <!-- Right side -->
-      <div class="timeline-container right">
-        <div class="timeline-content">
-          <h2>IT Intern</h2>
-          <div class="timeline-date">October 2018</div>
-          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
-            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-            habeo iusto primis ea eam.</p>
-        </div>
-      </div>
+        <!-- Timeline card -->
+        <div class="timeline-item">
+          <div class="timeline-point"></div>
+          <!-- Timeline content -->
+          <div class="timeline-content">
+            <img src="img/generic.jpg" alt="Generic Image" class="timeline-image">
+            <h2>IT Intern</h2>
+            <h4>Polytechnic of Šibenik</h4>
+            <div class="timeline-date">April 2020</div>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.</p>
+          </div><!-- /Timeline content end -->
+        </div><!-- /Timeline card end -->
 
-      <!-- Left side -->
-      <div class="timeline-container left">
-        <div class="timeline-content">
-          <h2>IT Intern</h2>
-          <div class="timeline-date">October 2018</div>
-          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
-            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-            habeo iusto primis ea eam.</p>
-        </div>
-      </div>
+        <!-- Timeline card -->
+        <div class="timeline-item">
+          <div class="timeline-point"></div>
+          <!-- Timeline content -->
+          <div class="timeline-content">
+            <h2>IT Intern</h2>
+            <h4>Polytechnic of Šibenik</h4>
+            <div class="timeline-date">April 2020</div>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.</p>
+              <a href="#" class="visit-page-btn">Visit page</a>
+          </div><!-- /Timeline content end -->
+        </div><!-- /Timeline card end -->
 
-      <!-- Right side -->
-      <div class="timeline-container right">
-        <div class="timeline-content">
-          <h2>IT Intern</h2>
-          <div class="timeline-date">October 2018</div>
-          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
-            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-            habeo iusto primis ea eam.</p>
-        </div>
-      </div>
-
-      <!-- Left side -->
-      <div class="timeline-container left">
-        <div class="timeline-content">
-          <h2>IT Intern</h2>
-          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
-            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-            habeo iusto primis ea eam.</p>
-        </div>
-      </div>
-
-      <!-- Right side -->
-      <div class="timeline-container right">
-        <div class="timeline-content">
-          <h2>IT Intern</h2>
-          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
-            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-            habeo iusto primis ea eam.</p>
-        </div>
-      </div>
-    </div><!-- /Timeline end -->
+        <!-- Timeline card -->
+        <div class="timeline-item">
+          <div class="timeline-point"></div>
+          <!-- Timeline content -->
+          <div class="timeline-content">
+            <h2>IT Intern</h2>
+            <h4>Polytechnic of Šibenik</h4>
+            <div class="timeline-date">April 2020</div>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, 
+              vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
+              habeo iusto primis ea eam.</p>
+              <a href="#" class="visit-page-btn">Visit page</a>
+          </div><!-- /Timeline content end -->
+        </div><!-- /Timeline card end -->
+      </div><!-- /Container end -->
+    </section>
 
     <!-- Skills section -->
     <div class="skills-section">
