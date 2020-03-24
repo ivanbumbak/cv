@@ -98,7 +98,7 @@ section {
   align-items: center;
   background-color: #fefefe;
   width: 100%;
-  height: 85vh; }
+  height: 90vh; }
 
 .profile-heading {
   text-align: center;
@@ -118,12 +118,6 @@ section {
   margin: 0;
   color: #8b8b8b; }
 
-#nutshell {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-  color: #353535; }
-
 .profile {
   display: flex;
   flex-direction: row;
@@ -139,14 +133,21 @@ section {
 .profile-bio {
   margin-top: 25px; }
 
+#nutshell {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #353535; }
+
 #short-bio {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.6em;
   line-height: 1.5; }
 
 .contact {
   margin-bottom: 25px;
-  padding: 10px; }
+  padding: 10px;
+  font-size: 1.2em; }
 
 #social-icons i {
   font-size: 2.5em;
@@ -167,10 +168,10 @@ section {
 #facebook-icon {
   color: #3b5998; }
 
-.timeline {
+.timeline-section {
   position: relative;
   background: linear-gradient(#fff, #e1e1e1); }
-  .timeline::before {
+  .timeline-section::before {
     content: '';
     background-color: #a80000;
     width: 5px;
@@ -181,7 +182,7 @@ section {
 
 .timeline-item {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 50px;
   margin-bottom: 70px; }
   .timeline-item:nth-child(even) .timeline-content {
     float: right; }
@@ -219,7 +220,7 @@ section {
 .timeline-content {
   position: relative;
   width: 40%;
-  margin: 10px 30px;
+  margin: 0 30px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
@@ -379,10 +380,10 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   width: 15%;
-  margin: 25px; }
+  margin: 30px; }
   .section-fifth i {
     font-size: 3.5em; }
   .section-fifth p {
@@ -434,53 +435,6 @@ section {
 
 #hr-footer {
   height: 1px;
-  background-image: linear-gradient(90deg, #fefefe, #a1a1a1, #fefefe);
+  background-image: linear-gradient(90deg, #e1e1e1, #a1a1a1, #e1e1e1);
   border: none;
   margin: 0; }
-
-/*
-//Job status, job duration and job description default styling
-#job-status {
-    font-weight: 600;
-    color: $highlight-color;
-}
-
-#job-description {
-    text-align: justify;
-    margin-bottom: 10px;
-}
-
-#job-duration {
-    font-weight: 600;
-    font-size: 0.8em;
-    color: $highlight-color;
-    margin-bottom: 5px;
-}
-
-//Show project description on hover
-.project {
-    @include nw-flex-column;
-    justify-content: space-between;
-    align-items: center;
-    &:hover {
-        .project-description {
-            visibility: visible;
-            opacity: 0.9;
-            @include fade-project(ease-in);
-        }
-    }
-}
-
-.project-description {
-    visibility: hidden;
-    @include nw-flex-column;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    background-color: $div-background-color;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    @include unfade-project(ease-out);
-}
-*/

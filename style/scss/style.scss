@@ -110,9 +110,10 @@ section {
     align-items: center;
     background-color: #fefefe;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
 }
 
+//Heading div element on hero
 .profile-heading {
     text-align: center;
     margin-top: 30px;
@@ -135,6 +136,26 @@ section {
     color: $subfont-color;
 }
 
+//Profile div element on hero
+.profile {
+    @include nw-flex-row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+//Profile image
+#profile-img {
+    border: 2px solid $highlight-color;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+//Profile biogrpahy div element on hero
+.profile-bio {
+    margin-top: 25px;
+}
+
+//Heading styling for short biography
 #nutshell {
     font-family: $heading-font;
     font-size: 2em;
@@ -142,33 +163,21 @@ section {
     color: $hero-heading-font-color;
 }
 
-.profile {
-    @include nw-flex-row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#profile-img {
-    border: 2px solid $highlight-color;
-    border-radius: 50%;
-    margin: 25px;
-}
-
-.profile-bio {
-    margin-top: 25px;
-}
-
+//Short biography
 #short-bio {
     font-family: $text-font;
-    font-size: 1.25em;
+    font-size: 1.6em;
     line-height: 1.5;
 }
 
+//Contant div element on hero
 .contact {
     margin-bottom: 25px;
     padding: 10px;
+    font-size: 1.2em;
 }
 
+//Social icons for contact
 #social-icons {
     i {
         font-size: 2.5em;
@@ -176,6 +185,7 @@ section {
     }
 }
 
+//Coloring of social icons
 #email-icon {
     color: $mail-icon-color;
 }
@@ -197,7 +207,7 @@ section {
 }
 
 //Timeline section
-.timeline {
+.timeline-section {
     position: relative;
     background: linear-gradient($div-background-color, $timeline-background-color);
     &::before {
@@ -211,10 +221,12 @@ section {
     }
 }
 
+//Timeline item
 .timeline-item {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 70px;
+    //Every second timeline item
     &:nth-child(even) {
         .timeline-content {
             float: right;
@@ -245,6 +257,7 @@ section {
     }
 }
 
+//Timeline point
 .timeline-point {
     width: 20px;
     height: 20px;
@@ -257,10 +270,11 @@ section {
     margin-left: -12px;
 }
 
+//Timeline content
 .timeline-content {
     position: relative;
     width: 40%;
-    margin: 10px 30px;
+    margin: 0 30px;
     border-radius: 5px;
     background-color: $div-background-color;
     box-shadow: $box-shadow-styling;
@@ -298,12 +312,14 @@ section {
     }
 }
 
+//Timeline item heading image
 .timeline-image {
     width: 100%;
     height: 100%;
     border-radius: 5px 5px 0 0;
 }
 
+//Timeline item date
 .timeline-date {
     display: inline-block;
     font-family: $heading-font;
@@ -316,6 +332,7 @@ section {
     right: 0;
 }
 
+//Timeline item button for visiting projects
 .visit-page-btn {
     display: inline-block;
     border: 1px solid $highlight-color;
@@ -433,10 +450,10 @@ section {
 //Section fifth default styling
 .section-fifth {
     @include nw-flex-row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     width: 15%;
-    margin: 25px;
+    margin: 30px;
     i {
         font-size: 3.5em;
     }
@@ -509,50 +526,3 @@ section {
     border: none;
     margin: 0;
 }
-
-/*
-//Job status, job duration and job description default styling
-#job-status {
-    font-weight: 600;
-    color: $highlight-color;
-}
-
-#job-description {
-    text-align: justify;
-    margin-bottom: 10px;
-}
-
-#job-duration {
-    font-weight: 600;
-    font-size: 0.8em;
-    color: $highlight-color;
-    margin-bottom: 5px;
-}
-
-//Show project description on hover
-.project {
-    @include nw-flex-column;
-    justify-content: space-between;
-    align-items: center;
-    &:hover {
-        .project-description {
-            visibility: visible;
-            opacity: 0.9;
-            @include fade-project(ease-in);
-        }
-    }
-}
-
-.project-description {
-    visibility: hidden;
-    @include nw-flex-column;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    background-color: $div-background-color;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    @include unfade-project(ease-out);
-}
-*/
