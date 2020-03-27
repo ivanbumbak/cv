@@ -20,21 +20,12 @@ a {
     color: $link-default-color;
 }
 
-section {
-    padding: 50px;
-}
-
 //Container default styling
-.container,
-.timeline-container {
+.container {
     display: flex;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-}
-
-.timeline-container {
-    display: block;
 }
 
 //Wrapper class
@@ -45,18 +36,6 @@ section {
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 25px;
-    background-color: $timeline-background-color;
-}
-
-//Header styling
-.header {
-    display: none;
-    //@include nw-flex-row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    background-color: $div-background-color;
-    box-shadow: $box-shadow-styling;
 }
 
 #logo-img {
@@ -106,17 +85,20 @@ section {
 //Landing page
 .hero-section {
     @include nw-flex-column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #fefefe;
+    margin-bottom: 15px;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
 }
 
 //Heading div element on hero
 .profile-heading {
+    @include nw-flex-column;
+    width: 100%;
     text-align: center;
-    margin-top: 30px;
+    box-shadow: $box-shadow-styling;
 }
 
 //Main heading on hero page
@@ -125,6 +107,7 @@ section {
     font-size: 3em;
     font-weight: 600;
     color: $hero-heading-font-color;
+    padding: 15px 0 0 0;
     margin: 0;
 }
 
@@ -132,6 +115,7 @@ section {
     font-family: $heading-font;
     font-size: 1.5em;
     font-weight: 300;
+    padding: 0 0 15px 0;
     margin: 0;
     color: $subfont-color;
 }
@@ -145,7 +129,7 @@ section {
 
 //Profile image
 #profile-img {
-    border: 2px solid $highlight-color;
+    border: 2px solid #0065a3;
     border-radius: 50%;
     margin: 25px;
 }
@@ -158,7 +142,7 @@ section {
 //Heading styling for short biography
 #nutshell {
     font-family: $heading-font;
-    font-size: 2em;
+    font-size: 1.55em;
     font-weight: 600;
     color: $hero-heading-font-color;
 }
@@ -166,7 +150,7 @@ section {
 //Short biography
 #short-bio {
     font-family: $text-font;
-    font-size: 1.6em;
+    font-size: 1.35em;
     line-height: 1.5;
 }
 
@@ -174,13 +158,12 @@ section {
 .contact {
     margin-bottom: 25px;
     padding: 10px;
-    font-size: 1.2em;
 }
 
 //Social icons for contact
 #social-icons {
     i {
-        font-size: 2.5em;
+        font-size: 2.6em;
         margin: 0 35px;
     }
 }
@@ -209,33 +192,63 @@ section {
 //Timeline section
 .timeline-section {
     position: relative;
-    background: linear-gradient($div-background-color, $timeline-background-color);
+    background-color: $body-background-color;
+    margin-bottom: 35px;
     &::before {
         content: '';
-        background-color: $highlight-color;
+        background-color: #0065a38f;
         width: 5px;
-        height: 95%;
+        height: 101%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
 }
 
+//Timeline container
+.timeline-container {
+    //@include timeline-flex;
+    //align-items: baseline;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
 //Timeline item
 .timeline-item {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 70px;
     //Every second timeline item
     &:nth-child(even) {
         .timeline-content {
             float: right;
+        }
 
-            .timeline-date {
-                right: auto;
+        .timeline-image-header {
+            height: 200px;
+            position: relative;
+            border-radius: 5px 5px 0 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            h2 {
+                font-family: $heading-font;
+                position: absolute;
+                margin: 0;
+                padding: 0 10px 0 10px;
+                bottom: 35px;
                 left: 0;
-                border-radius: 5px 0 0 0;
             }
+        
+            h4 {
+                font-family: $text-font;
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+            }
+        }
+
+        .timeline-content {
+            margin-left: 35px;
             &::after {
                 content: '';
                 position: absolute;
@@ -246,7 +259,17 @@ section {
                 left: -15px;
                 margin-left: -5px;
                 border-width: 10px 15px 10px 0;
-                border-color: transparent $highlight-color transparent transparent;
+                border-color: transparent #0065a3 transparent transparent;
+            }
+            h2 {
+                margin-bottom: 0;
+                padding: 10px 10px 0 10px;
+            }
+
+            h4 {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 0 10px 0 10px;
             }
         }
     }
@@ -259,10 +282,10 @@ section {
 
 //Timeline point
 .timeline-point {
-    width: 20px;
-    height: 20px;
-    border: 2px solid $highlight-color;
-    background-color: $div-background-color;
+    width: 15px;
+    height: 15px;
+    border: 5px solid $body-background-color;
+    background-color: #0065a3;
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -270,11 +293,52 @@ section {
     margin-left: -12px;
 }
 
+//Timeline item heading image
+.timeline-image-header {
+    height: 200px;
+	position: relative;
+    border-radius: 5px 5px 0 0;
+    h2 {
+        font-family: $text-font;
+        color: #fefefe;
+        position: absolute;
+        margin: 0;
+        padding: 0 10px 0 10px !important;
+		bottom: 35px;
+		left: 0;
+    }
+
+    h4 {
+        font-family: $text-font;
+        color: #fefefe;
+        position: absolute;
+        margin: 0;
+        padding: 0 10px 10px 10px !important;
+		bottom: 5px;
+		left: 0;
+    }
+}
+
+#cv-web-background {
+    @include cover-background;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../../img/cv-web.png);
+}
+
+#gambi-project-background {
+    @include cover-background;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../../img/gambi-project.png);
+}
+
+//Right item with header image
+.timeline-image-header-right {
+    padding: 0 !important;
+}
+
 //Timeline content
 .timeline-content {
     position: relative;
     width: 40%;
-    margin: 0 30px;
+    margin: 0 60px;
     border-radius: 5px;
     background-color: $div-background-color;
     box-shadow: $box-shadow-styling;
@@ -288,10 +352,10 @@ section {
         right: -15px;
         margin-right: -5px;
         border-width: 10px 0 10px 15px;
-        border-color: transparent transparent transparent $highlight-color;
+        border-color: transparent transparent transparent #0065a3;
     }
+    
     h2 {
-        display: inline-block;
         font-family: $heading-font;
         margin: 0;
         padding: 10px 0 0 10px;
@@ -301,22 +365,17 @@ section {
         font-family: $text-font;
         font-weight: 300;
         margin: 0;
-        padding: 0 0 10px 10px;
+        padding: 0 0 0 10px;
     }
 
     p {
         font-family: $text-font;
+        font-size: 14px;
         text-align: justify;
         margin: 0;
         padding: 10px;
+        line-height: 1.5;
     }
-}
-
-//Timeline item heading image
-.timeline-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px 5px 0 0;
 }
 
 //Timeline item date
@@ -324,7 +383,8 @@ section {
     display: inline-block;
     font-family: $heading-font;
     color: $date-font-color;
-    background-color: $highlight-color;
+    font-size: 0.8em;
+    background-color: #0065a3;
     padding: 10px;
     border-radius: 0 5px 0 0;
     position: absolute;
@@ -335,16 +395,16 @@ section {
 //Timeline item button for visiting projects
 .visit-page-btn {
     display: inline-block;
-    border: 1px solid $highlight-color;
+    border: 1px solid #0066eb;
     font-family: $heading-font;
     color: $date-font-color;
     font-size: 1em;
-    background-color: $highlight-color;
+    background-color: #0066eb;
     border-radius: 5px;
-    padding: 15px;
-    margin: 20px 10px;
+    padding: 10px;
+    margin: 10px;
     &:hover {
-        color: $highlight-color;
+        color: #0066eb;
         background-color: $div-background-color;
     }
 }
@@ -354,7 +414,8 @@ section {
 .projects-section, .skills-section {
     width: 100%;
     text-align: center;
-    background-color: $timeline-background-color;
+    padding-top: 25px;
+    background-color: $div-background-color;
     h1 {
         font-family: $heading-font;
         font-size: 2.5em;
@@ -511,7 +572,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: $timeline-background-color;
+    background-color: $body-background-color;
     p {
         font-family: $text-font;
         font-size: 0.9em;

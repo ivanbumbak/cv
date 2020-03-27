@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0; }
 
@@ -13,18 +13,11 @@ a {
   text-decoration: none;
   color: #1a1a1a; }
 
-section {
-  padding: 50px; }
-
-.container,
-.timeline-container {
+.container {
   display: flex;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto; }
-
-.timeline-container {
-  display: block; }
 
 .wrapper {
   display: flex;
@@ -32,16 +25,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 25px;
-  background-color: #e1e1e1; }
-
-.header {
-  display: none;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
+  margin-bottom: 25px; }
 
 #logo-img {
   border-radius: 50%;
@@ -94,27 +78,34 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #fefefe;
+  margin-bottom: 15px;
   width: 100%;
-  height: 90vh; }
+  height: 80vh; }
 
 .profile-heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
   text-align: center;
-  margin-top: 30px; }
+  box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
 
 #heading {
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
   font-weight: 600;
   color: #353535;
+  padding: 15px 0 0 0;
   margin: 0; }
 
 #subheading {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
+  padding: 0 0 15px 0;
   margin: 0;
   color: #8b8b8b; }
 
@@ -126,7 +117,7 @@ section {
   align-items: flex-start; }
 
 #profile-img {
-  border: 2px solid #a80000;
+  border: 2px solid #0065a3;
   border-radius: 50%;
   margin: 25px; }
 
@@ -135,22 +126,21 @@ section {
 
 #nutshell {
   font-family: "Montserrat", sans-serif;
-  font-size: 2em;
+  font-size: 1.55em;
   font-weight: 600;
   color: #353535; }
 
 #short-bio {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.35em;
   line-height: 1.5; }
 
 .contact {
   margin-bottom: 25px;
-  padding: 10px;
-  font-size: 1.2em; }
+  padding: 10px; }
 
 #social-icons i {
-  font-size: 2.5em;
+  font-size: 2.6em;
   margin: 0 35px; }
 
 #email-icon {
@@ -170,26 +160,47 @@ section {
 
 .timeline-section {
   position: relative;
-  background: linear-gradient(#fff, #e1e1e1); }
+  background-color: #f5f5f5;
+  margin-bottom: 35px; }
   .timeline-section::before {
     content: '';
-    background-color: #a80000;
+    background-color: #0065a38f;
     width: 5px;
-    height: 95%;
+    height: 101%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
 
+.timeline-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 0; }
+
 .timeline-item {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 70px; }
+  width: 100%; }
   .timeline-item:nth-child(even) .timeline-content {
     float: right; }
-    .timeline-item:nth-child(even) .timeline-content .timeline-date {
-      right: auto;
-      left: 0;
-      border-radius: 5px 0 0 0; }
+  .timeline-item:nth-child(even) .timeline-image-header {
+    height: 200px;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .timeline-item:nth-child(even) .timeline-image-header h2 {
+      font-family: "Montserrat", sans-serif;
+      position: absolute;
+      margin: 0;
+      padding: 0 10px 0 10px;
+      bottom: 35px;
+      left: 0; }
+    .timeline-item:nth-child(even) .timeline-image-header h4 {
+      font-family: "Open Sans", sans-serif;
+      position: absolute;
+      bottom: 5px;
+      left: 0; }
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 35px; }
     .timeline-item:nth-child(even) .timeline-content::after {
       content: '';
       position: absolute;
@@ -200,27 +211,70 @@ section {
       left: -15px;
       margin-left: -5px;
       border-width: 10px 15px 10px 0;
-      border-color: transparent #a80000 transparent transparent; }
+      border-color: transparent #0065a3 transparent transparent; }
+    .timeline-item:nth-child(even) .timeline-content h2 {
+      margin-bottom: 0;
+      padding: 10px 10px 0 10px; }
+    .timeline-item:nth-child(even) .timeline-content h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0 10px 0 10px; }
   .timeline-item::after {
     content: '';
     display: block;
     clear: both; }
 
 .timeline-point {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #a80000;
-  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border: 5px solid #f5f5f5;
+  background-color: #0065a3;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   margin-top: 9px;
   margin-left: -12px; }
 
+.timeline-image-header {
+  height: 200px;
+  position: relative;
+  border-radius: 5px 5px 0 0; }
+  .timeline-image-header h2 {
+    font-family: "Open Sans", sans-serif;
+    color: #fefefe;
+    position: absolute;
+    margin: 0;
+    padding: 0 10px 0 10px !important;
+    bottom: 35px;
+    left: 0; }
+  .timeline-image-header h4 {
+    font-family: "Open Sans", sans-serif;
+    color: #fefefe;
+    position: absolute;
+    margin: 0;
+    padding: 0 10px 10px 10px !important;
+    bottom: 5px;
+    left: 0; }
+
+#cv-web-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../../img/cv-web.png); }
+
+#gambi-project-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../../img/gambi-project.png); }
+
+.timeline-image-header-right {
+  padding: 0 !important; }
+
 .timeline-content {
   position: relative;
   width: 40%;
-  margin: 0 30px;
+  margin: 0 60px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
@@ -234,9 +288,8 @@ section {
     right: -15px;
     margin-right: -5px;
     border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #a80000; }
+    border-color: transparent transparent transparent #0065a3; }
   .timeline-content h2 {
-    display: inline-block;
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 10px 0 0 10px; }
@@ -244,23 +297,21 @@ section {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     margin: 0;
-    padding: 0 0 10px 10px; }
+    padding: 0 0 0 10px; }
   .timeline-content p {
     font-family: "Open Sans", sans-serif;
+    font-size: 14px;
     text-align: justify;
     margin: 0;
-    padding: 10px; }
-
-.timeline-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px 5px 0 0; }
+    padding: 10px;
+    line-height: 1.5; }
 
 .timeline-date {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  background-color: #a80000;
+  font-size: 0.8em;
+  background-color: #0065a3;
   padding: 10px;
   border-radius: 0 5px 0 0;
   position: absolute;
@@ -269,23 +320,24 @@ section {
 
 .visit-page-btn {
   display: inline-block;
-  border: 1px solid #a80000;
+  border: 1px solid #0066eb;
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 1em;
-  background-color: #a80000;
+  background-color: #0066eb;
   border-radius: 5px;
-  padding: 15px;
-  margin: 20px 10px; }
+  padding: 10px;
+  margin: 10px; }
   .visit-page-btn:hover {
-    color: #a80000;
+    color: #0066eb;
     background-color: #fff; }
 
 .experience-section, .education-section,
 .projects-section, .skills-section {
   width: 100%;
   text-align: center;
-  background-color: #e1e1e1; }
+  padding-top: 25px;
+  background-color: #fff; }
   .experience-section h1, .education-section h1,
   .projects-section h1, .skills-section h1 {
     font-family: "Montserrat", sans-serif;
@@ -427,7 +479,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #e1e1e1; }
+  background-color: #f5f5f5; }
   .footer p {
     font-family: "Open Sans", sans-serif;
     font-size: 0.9em;
@@ -435,6 +487,6 @@ section {
 
 #hr-footer {
   height: 1px;
-  background-image: linear-gradient(90deg, #e1e1e1, #a1a1a1, #e1e1e1);
+  background-image: linear-gradient(90deg, #f9f9f9, #8b8b8b, #f9f9f9);
   border: none;
   margin: 0; }
