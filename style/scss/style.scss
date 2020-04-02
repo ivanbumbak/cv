@@ -307,32 +307,32 @@ a {
 //Timeline cards background
 #cv-web-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/cv-web.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/cv-web.png);
 }
 
 #gambi-project-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/gambi-project.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/gambi-project.png);
 }
 
 #apartments-sandra-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/apartments-sandra.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/apartments-sandra.png);
 }
 
 #student-record-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/vus-record.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/vus-record.png);
 }
 
 #oracle-academy-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/oracle.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/oracle.png);
 }
 
 #evus-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/eVus.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/eVus.png);
 }
 
 //Timeline content
