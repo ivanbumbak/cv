@@ -21,40 +21,16 @@
     flex-wrap: nowrap;
 }
 
-//Hide border bottom on navigation links
-@mixin hide-underline($hide) {
-    -webkit-transition: $hide;
-    -moz-transition: $hide;
-    -o-transition: $hide;
-    transition: $hide;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-
-//Show border bottom on hover on navigation links
-@mixin show-underline($show) {
-    -webkit-transition: $show;
-    -moz-transition: $show;
-    -o-transition: $show;
-    transition: $show;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-
 //Unfade color on social icons
 @mixin unfade($unfade) {
     -webkit-transition: $unfade;
     -moz-transition: $unfade;
     -o-transition: $unfade;
     transition: $unfade;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 //Fade color on hover on social icons
@@ -63,34 +39,10 @@
     -moz-transition: $fade;
     -o-transition: $fade;
     transition: $fade;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.8s;
-}
-
-//Unfade project description
-@mixin unfade-project($unfade-project) {
-    -webkit-transition: $unfade-project;
-    -moz-transition: $unfade-project;
-    -o-transition: $unfade-project;
-    transition: $unfade-project;
-    -webkit-transition-duration: 0.7s;
-    -moz-transition-duration: 0.7s;
-    -o-transition-duration: 0.7s;
-    transition-duration: 0.7s;
-}
-
-//Fade project description
-@mixin fade-project($fade-project) {
-    -webkit-transition: $fade-project;
-    -moz-transition: $fade-project;
-    -o-transition: $fade-project;
-    transition: $fade-project;
-    -webkit-transition-duration: 0.6s;
-    -moz-transition-duration: 0.6s;
-    -o-transition-duration: 0.6s;
-    transition-duration: 0.6s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 //Cover background for timeline items with images

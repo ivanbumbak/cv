@@ -91,25 +91,119 @@ a {
 .contact {
   margin-bottom: 25px;
   padding: 10px; }
+  .contact p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    padding: 5px 35px; }
 
 #social-icons i {
   font-size: 2.6em;
   margin: 0 35px; }
 
 #email-icon {
-  color: #dd4e40; }
+  color: #dd4d40ce;
+  -webkit-transition: ease-out;
+  -moz-transition: ease-out;
+  -o-transition: ease-out;
+  transition: ease-out;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  #email-icon:hover {
+    color: #dd4d40;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
 
 #linkedin-icon {
-  color: #0077b7; }
+  color: #0077b7ce;
+  -webkit-transition: ease-out;
+  -moz-transition: ease-out;
+  -o-transition: ease-out;
+  transition: ease-out;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  #linkedin-icon:hover {
+    color: #0077b7;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
 
 #github-icon {
-  color: #1b1f23; }
+  color: #1b1f23ce;
+  -webkit-transition: ease-out;
+  -moz-transition: ease-out;
+  -o-transition: ease-out;
+  transition: ease-out;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  #github-icon:hover {
+    color: #1b1f23;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
 
 #instagram-icon {
-  color: #e32e71; }
+  color: #e32e71ce;
+  -webkit-transition: ease-out;
+  -moz-transition: ease-out;
+  -o-transition: ease-out;
+  transition: ease-out;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  #instagram-icon:hover {
+    color: #e32e71;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
 
 #facebook-icon {
-  color: #3b5998; }
+  color: #3b5998ce;
+  -webkit-transition: ease-out;
+  -moz-transition: ease-out;
+  -o-transition: ease-out;
+  transition: ease-out;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  #facebook-icon:hover {
+    color: #3b5998;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
 
 .timeline-section {
   position: relative;
@@ -119,7 +213,7 @@ a {
     content: '';
     background-color: #0065a38f;
     width: 5px;
-    height: 101%;
+    height: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
@@ -194,7 +288,7 @@ a {
   border-radius: 5px 5px 0 0; }
   .timeline-image-header h2 {
     font-family: "Open Sans", sans-serif;
-    color: #fefefe;
+    color: #000;
     position: absolute;
     margin: 0;
     padding: 0 10px 0 10px !important;
@@ -213,21 +307,42 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../../img/cv-web.png); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/cv-web.png); }
 
 #gambi-project-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../../img/gambi-project.png); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/gambi-project.png); }
 
-.timeline-image-header-right {
-  padding: 0 !important; }
+#apartments-sandra-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/apartments-sandra.png); }
+
+#student-record-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/vus-record.png); }
+
+#oracle-academy-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/oracle.png); }
+
+#evus-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(/img/eVus.png); }
 
 .timeline-content {
   position: relative;
   width: 40%;
-  margin: 0 60px;
+  margin: 0 90px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 8px 8px rgba(37, 37, 37, 0.2); }
@@ -246,7 +361,7 @@ a {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 10px 0 0 10px; }
-  .timeline-content h4 {
+  .timeline-content h3, .timeline-content h4 {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     margin: 0;
@@ -339,12 +454,6 @@ a {
 
 #teamwork-icon {
   color: #ecab43; }
-
-#hr-footer {
-  height: 1px;
-  background-image: linear-gradient(90deg, #f9f9f9, #8b8b8b, #f9f9f9);
-  border: none;
-  margin: 0; }
 
 .footer {
   display: flex;

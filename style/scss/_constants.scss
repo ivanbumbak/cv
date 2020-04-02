@@ -12,12 +12,21 @@ $subfont-color: #8b8b8b; //Subheadings and subtext font color
 $link-default-color: #1a1a1a; //Default link color
 $button-color: #0066eb; //Color for button
 
-//Icon colors
-$mail-icon-color: #dd4e40; //Email icon
+//Link icon colors fade
+$mail-icon-color-fade: #dd4d40ce; //Fade email icon
+$linkedin-icon-color-fade: #0077b7ce; //LinkedIn icon
+$github-icon-color-fade: #1b1f23ce; //GitHub icon
+$instagram-icon-color-fade: #e32e71ce; //Instagram icon
+$facebook-icon-color-fade: #3b5998ce; //Facebook icon
+
+//Link icon colors
+$mail-icon-color: #dd4d40; //Email icon color on hover
 $linkedin-icon-color: #0077b7; //LinkedIn icon
 $github-icon-color: #1b1f23; //GitHub icon
 $instagram-icon-color: #e32e71; //Instagram icon
 $facebook-icon-color: #3b5998; //Facebook icon
+
+//Skills icon colors
 $html-icon-color: #de4b25; //HTML5 icon color
 $css-icon-color: #1a70b5; //CSS3 icon color
 $sass-icon-color: #c76495; //SASS icon color
