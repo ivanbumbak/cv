@@ -302,7 +302,7 @@ a {
     border-radius: 5px 5px 0 0;
     h2 {
         font-family: $text-font;
-        color: #000;
+        color: #fefefe;
         position: absolute;
         margin: 0;
         padding: 0 10px 0 10px !important;
@@ -324,32 +324,47 @@ a {
 //Timeline cards background
 #cv-web-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/cv-web.png);
+    background-image: $linear-gradient, url(/img/cv-web.png);
 }
 
 #gambi-project-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/gambi-project.png);
+    background-image: $linear-gradient, url(/img/gambi-project.png);
 }
 
 #apartments-sandra-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/apartments-sandra.png);
+    background-image: $linear-gradient, url(/img/apartments-sandra.png);
 }
 
-#student-record-background {
+#student-record-background, #android-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/vus-record.png);
+    background-image: $linear-gradient, url(/img/code.jpg);
 }
 
-#oracle-academy-background {
+#oracle-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/oracle.png);
+    background-image: $linear-gradient, url(/img/oracle.jpg);
 }
 
-#evus-background {
+#graduation-background {
     @include cover-background;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.6)), url(/img/eVus.png);
+    background-image: $linear-gradient, url(/img/graduation.jpg);
+}
+
+#erasmus-background {
+    @include cover-background;
+    background-image: $linear-gradient, url(/img/erasmus.jpg);
+}
+
+#it-background {
+    @include cover-background;
+    background-image: $linear-gradient, url(/img/it.jpg);
+}
+
+#mBot-background {
+    @include cover-background;
+    background-image: $linear-gradient, url(/img/mBot.jpg);
 }
 
 //Timeline content
