@@ -29,6 +29,17 @@ $(function(){
 
     scrollReveal.reveal('.fadeInRight', fadeRightOptions);
 
+    //Show on load
+    $(document).ready(() => {
+        $('.profile-heading').delay(500).show(1500, 'swing', () => {
+            //Animation complete
+        });
+
+        $('.contact').delay(500).show(1600, 'linear', () => {
+            //Animation complete
+        });
+    });
+
     //Scroll to top
     scrollToTop();
 

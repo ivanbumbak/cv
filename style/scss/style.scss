@@ -68,10 +68,9 @@ a {
 
 //Heading div element on hero
 .profile-heading {
-    @include nw-flex-column;
+    display: none;
     width: 100%;
     text-align: center;
-    box-shadow: $box-shadow-styling;
 }
 
 //Main heading on hero page
@@ -96,9 +95,7 @@ a {
 
 //Profile div element on hero
 .profile {
-    @include nw-flex-row;
-    justify-content: center;
-    align-items: flex-start;
+    display: flex;
 }
 
 //Profile image
@@ -130,8 +127,7 @@ a {
 
 //Contant div element on hero
 .contact {
-    margin-bottom: 25px;
-    padding: 10px;
+    display: none;
     p {
         font-family: $text-font;
         font-size: 1.5em;
@@ -340,11 +336,6 @@ a {
 #student-record-background, #android-background {
     @include cover-background;
     background-image: $linear-gradient, url(/img/code.jpg);
-}
-
-#oracle-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/oracle.jpg);
 }
 
 #graduation-background {
