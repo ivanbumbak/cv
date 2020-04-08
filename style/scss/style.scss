@@ -237,14 +237,14 @@ a {
                 position: absolute;
                 margin: 0;
                 padding: 0 10px 0 10px;
-                bottom: 10px;
+                bottom: 35px;
                 left: 0;
             }
         
             h4 {
                 font-family: $text-font;
                 position: absolute;
-                bottom: 5px;
+                bottom: 0;
                 left: 0;
             }
         }
@@ -306,7 +306,7 @@ a {
         position: absolute;
         margin: 0;
         padding: 0 10px 0 10px !important;
-		bottom: 10px;
+		bottom: 35px;
 		left: 0;
     }
 
@@ -316,7 +316,7 @@ a {
         position: absolute;
         margin: 0;
         padding: 0 10px 10px 10px !important;
-		bottom: 5px;
+		bottom: 0;
 		left: 0;
     }
 }
@@ -365,6 +365,21 @@ a {
 #mBot-background {
     @include cover-background;
     background-image: $linear-gradient, url(/img/mBot.jpg);
+}
+
+#ombudsman-background {
+    @include cover-background;
+    background-image: $linear-gradient, url(/img/ombudsman.jpg);
+}
+
+#web-design-background {
+    @include cover-background;
+    background-image: $linear-gradient, url(/img/web-design.jpg);
+}
+
+#teaching-background {
+    @include cover-background;
+    background-image: $linear-gradient, url(/img/teaching.png);
 }
 
 //Timeline content

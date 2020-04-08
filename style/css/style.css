@@ -252,12 +252,12 @@ a {
       position: absolute;
       margin: 0;
       padding: 0 10px 0 10px;
-      bottom: 10px;
+      bottom: 35px;
       left: 0; }
     .timeline-item:nth-child(even) .timeline-image-header h4 {
       font-family: "Open Sans", sans-serif;
       position: absolute;
-      bottom: 5px;
+      bottom: 0;
       left: 0; }
   .timeline-item:nth-child(even) .timeline-content {
     margin-left: 35px; }
@@ -305,7 +305,7 @@ a {
     position: absolute;
     margin: 0;
     padding: 0 10px 0 10px !important;
-    bottom: 10px;
+    bottom: 35px;
     left: 0; }
   .timeline-image-header h4 {
     font-family: "Open Sans", sans-serif;
@@ -313,68 +313,80 @@ a {
     position: absolute;
     margin: 0;
     padding: 0 10px 10px 10px !important;
-    bottom: 5px;
+    bottom: 0;
     left: 0; }
 
 #cv-web-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/cv-web.png); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/cv-web.png); }
 
 #gambi-project-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/gambi-project.png); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/gambi-project.png); }
 
 #apartments-sandra-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/apartments-sandra.png); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/apartments-sandra.png); }
 
-#student-record-background {
+#student-record-background, #android-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/code.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/code.jpg); }
 
 #oracle-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/oracle.jpg); }
-
-#android-background {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/code.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/oracle.jpg); }
 
 #graduation-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/graduation.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/graduation.jpg); }
 
 #erasmus-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/erasmus.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/erasmus.jpg); }
 
 #it-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/it.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/it.jpg); }
 
 #mBot-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/img/mBot.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/mBot.jpg); }
+
+#ombudsman-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/ombudsman.jpg); }
+
+#web-design-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/web-design.jpg); }
+
+#teaching-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/img/teaching.png); }
 
 .timeline-content {
   position: relative;
