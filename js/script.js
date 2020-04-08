@@ -43,6 +43,7 @@ $(function(){
         }, 800);
     });
    
+    //Functions
     function scrollToTop(){
         $(document).scroll(() => {
             const distanceFromTop = $(this).scrollTop();
