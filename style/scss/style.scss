@@ -68,7 +68,6 @@ a {
 
 //Heading div element on hero
 .profile-heading {
-    display: none;
     width: 100%;
     text-align: center;
 }
@@ -127,11 +126,19 @@ a {
 
 //Contant div element on hero
 .contact {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200px);
+    @include fade(ease-in);
     p {
         font-family: $text-font;
         font-size: 1.5em;
         padding: 5px 35px;
+    }
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

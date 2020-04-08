@@ -52,7 +52,6 @@ a {
   height: 80vh; }
 
 .profile-heading {
-  display: none;
   width: 100%;
   text-align: center; }
 
@@ -95,11 +94,25 @@ a {
   line-height: 1.5; }
 
 .contact {
-  display: none; }
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-200px);
+  -webkit-transition: ease-in;
+  -moz-transition: ease-in;
+  -o-transition: ease-in;
+  transition: ease-in;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
   .contact p {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     padding: 5px 35px; }
+  .contact.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0); }
 
 #social-icons i {
   font-size: 2.6em;
