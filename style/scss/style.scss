@@ -63,7 +63,7 @@ a {
     background-color: #fefefe;
     margin-bottom: 15px;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
 }
 
 //Heading div element on hero
@@ -240,14 +240,14 @@ a {
                 position: absolute;
                 margin: 0;
                 padding: 0 10px 0 10px;
-                bottom: 35px;
+                bottom: 5px;
                 left: 0;
             }
         
             h4 {
                 font-family: $text-font;
                 position: absolute;
-                bottom: 0;
+                bottom: 30px;
                 left: 0;
             }
         }
@@ -309,7 +309,7 @@ a {
         position: absolute;
         margin: 0;
         padding: 0 10px 0 10px !important;
-		bottom: 35px;
+		bottom: 5px;
 		left: 0;
     }
 
@@ -318,28 +318,12 @@ a {
         color: #fefefe;
         position: absolute;
         margin: 0;
-        padding: 0 10px 10px 10px !important;
-		bottom: 0;
+		bottom: 30px;
 		left: 0;
     }
 }
 
 //Timeline cards background
-#cv-web-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/cv-web.png);
-}
-
-#gambi-project-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/gambi-project.png);
-}
-
-#apartments-sandra-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/apartments-sandra.png);
-}
-
 #student-record-background, #android-background {
     @include cover-background;
     background-image: $linear-gradient, url(/img/code.jpg);
@@ -407,7 +391,7 @@ a {
         padding: 10px 0 0 10px;
     }
 
-    h3, h4 {
+    h4 {
         font-family: $text-font;
         font-weight: 300;
         margin: 0;
