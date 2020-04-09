@@ -72,7 +72,6 @@ a {
     text-align: center;
 }
 
-//Main heading on hero page
 #heading {
     font-family: $heading-font;
     font-size: 3em;
@@ -82,7 +81,6 @@ a {
     margin: 0;
 }
 
-//Subheading on hero page
 #subheading {
     font-family: $heading-font;
     font-size: 1.5em;
@@ -97,7 +95,6 @@ a {
     display: flex;
 }
 
-//Profile image
 #profile-img {
     border: 2px solid $element-color;
     border-radius: 50%;
@@ -142,7 +139,6 @@ a {
     }
 }
 
-//Social icons for contact
 .social-icons-contact {
     i {
         font-size: 2.6em;
@@ -150,7 +146,6 @@ a {
     }
 }
 
-//Coloring of social icons
 #email-icon {
     color: $mail-icon-color-fade;
     @include unfade(ease-out);
