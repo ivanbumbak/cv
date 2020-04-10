@@ -319,39 +319,34 @@ a {
 }
 
 //Timeline cards background
-#student-record-background, #android-background {
+#code-background {
     @include cover-background;
-    background-image: $linear-gradient, url(/img/code.jpg);
+    background-image: $linear-gradient, url(/img/code.png);
 }
 
 #graduation-background {
     @include cover-background;
-    background-image: $linear-gradient, url(/img/graduation.jpg);
+    background-image: $linear-gradient, url(/img/graduation.png);
 }
 
 #erasmus-background {
     @include cover-background;
-    background-image: $linear-gradient, url(/img/erasmus.jpg);
+    background-image: $linear-gradient, url(/img/erasmus.png);
 }
 
 #it-background {
     @include cover-background;
-    background-image: $linear-gradient, url(/img/it.jpg);
-}
-
-#mBot-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/mBot.jpg);
+    background-image: $linear-gradient, url(/img/it.png);
 }
 
 #ombudsman-background {
     @include cover-background;
-    background-image: $linear-gradient, url(/img/ombudsman.jpg);
+    background-image: $linear-gradient, url(/img/ombudsman.png);
 }
 
 #web-design-background {
     @include cover-background;
-    background-image: $linear-gradient, url(/img/web-design.jpg);
+    background-image: $linear-gradient, url(/img/web-design.png);
 }
 
 #teaching-background {
