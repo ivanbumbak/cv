@@ -34,6 +34,14 @@ $(function(){
         $('.contact').addClass('show')
     }, 800);
 
+    //Progress bar
+    const maxHeight = $('html').height() - $(window).innerHeight();
+    const progressBar = $('#progress-bar');
+    $(document).scroll(() => {
+        const barWidth = `${($(window).scrollTop() / maxHeight) * 100}%`;
+        progressBar.width(barWidth);
+    });
+
     //Scroll to top
     scrollToTop();
 

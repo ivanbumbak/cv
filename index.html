@@ -4,30 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
-    <script src="https://kit.fontawesome.com/40ca51ed50.js" crossorigin="anonymus"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+    <title>Ivan Bumbak &#8226; @theBumbs &#8226; IT</title>
   </head>
   <header>
-     <!-- Profile heading -->
-     <div class="profile-heading">
-       <h1 id="heading">Ivan Bumbak</h1>
-       <h4 id="subheading">Looking for an IT job</h4>
-     </div>
-  </header>
+    <!-- Progress bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Profile heading -->
+    <div class="profile-heading">
+      <h1 id="heading">Ivan Bumbak</h1>
+      <h4 id="subheading">Looking for an IT job</h4>
+    </div>
+ </header>
   <body>
     <!-- Scroll to top -->
     <div id="scroll-to-top">
-      <i class="fas fa-arrow-circle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </div>
 
     <!-- Biography section -->
     <div class="hero-section">
      <div class="profile">
         <div class="profile-img">
-          <img id="profile-img" src="/img/profile-img.jpg">
+          <img id="profile-img" src="/img/profile-img.png">
         </div>
   
         <!-- Short biography -->
@@ -36,8 +38,8 @@
             Born on February 6, 1994 in <b>Šibenik, Croatia</b>.<br>
             Educated at <b>Polytechnic of Šibenik, Šibenik</b>.<br>
             <b>Cats, food and hiking</b> are my stress relief.<br>
-            <b>Sports or movies</b> and it's never boring.<br><br></p>
-        </div><!-- /Short biography end -->
+            <b>Sports or movies</b> are always great invite.</p>
+        </div>
       </div>
 
         <!-- Contact icons -->
@@ -78,7 +80,10 @@
             <h2>Web CV</h2>
           </div>
           <div class="timeline-date">April 2020</div>
-          <p>Published own CV in Web form.</p>
+          <p>Developed a simple website which contains my own CV. Also the web
+            contains blog part where I will publish some posts about IT industry
+            and leasure topcis like food, cats, sports, games and etc.
+          </p>
         </div>
       </div><!-- /Timeline card end -->
 
@@ -91,10 +96,10 @@
             <h4>Polytechnic of Šibenik</h4>
             <h2>Management</h2>
           </div>
-          <p>Graduated from Polytechnic of Šibenik gaining the title spec.oec. (EQF7). 
-            Through these 2 years I got a job as IT Inter at Polytechnic. 
-            I have written two professional papers. During my final term I was enrolled
-          at Erasmus+ exchabge in Nitra, Slovakia at University of Agriculture.</p>
+          <div class="timeline-date">September 2018</div>
+          <p>Graduated from Polytechnic of Šibenik gaining the title spec.oec.(EQF7) and the total of 300 ECTS. 
+            Through these 2 years I got a job as IT Inter at Polytechnic. I have written two professional papers and 
+            during my final term I was enrolled at Erasmus+ exchabge in Nitra, Slovakia at University of Agriculture.</p>
         </div>
       </div><!-- /Timeline card end -->
 
@@ -107,9 +112,10 @@
           <h2>eVus Android app</h2>
         </div>
         <div class="timeline-date">September 2018</div>
-        <p>eVus Android application was made specially for master thesis.
-          It calculates your scholarship fee based on failed ECTS points.
-          You can find source code on GitHub profile.</p>
+        <p>eVus Android application was made specially for master thesis. The goal of master thesis 
+          was to explain agile development methods using android application as an example. The thesis 
+          was written on English and it is publicly avaliable on my OneDrive. The app calculates students 
+          enrollment scholarship fee based on their failed ECTS points. You can find source code on GitHub profile.</p>
           <a href="https://github.com/ivanbumbak/eVUS" target="_blank" class="visit-page-btn">View on GitHub</a>
       </div>
     </div><!-- /Timeline card end -->
@@ -134,11 +140,11 @@
       <div class="timeline-point"></div>
       <!-- Timeline content -->
       <div class="timeline-content fadeInLeft">
-        <div class="timeline-date">February 2018</div>
         <div class="timeline-image-header" id="erasmus-background">
           <h4>Slovenská pol'nohospodárska univerzita v Nitre</h4>
           <h2>Erasmus+ programmme</h2>
         </div>
+        <div class="timeline-date">February 2018</div>
         <p>Enrolled on Erasmus+ exchange at Slovak University of Agriculture in Nitra, Slovakia 
           during summer semester. I was accepted at Faculty of Economics and Management and 
           Faculty of European Studies. Courses: European Consumer and Consumer Behavior, 
@@ -173,8 +179,8 @@
           </div>
           <div class="timeline-date">October 2017</div>
           <p>I was responsible for fixing and installing computers, maintenance of web pages, staff computers, 
-            network printers and etc. I also worked with networks and I'm able of making UTP connectors and 
-            searching connections in the network.</p>
+            network printers and etc. I also worked with networks and I'm able to make UTP connectors and 
+            search connections in the network.</p>
         </div>
       </div><!-- /Timeline card end -->
 
@@ -188,10 +194,11 @@
             <h4>Oracle Academy</h4>
             <h2>Database Design & SQL</h2>
           </div>
+          <div class="timeline-date">June 2017</div>
           <p>Enrolled on another Oracle Academy course: Database Design & Programming with SQL.
-            The coruse had two parts: Database design where I learned how to designed them using
-            ER diagrams. Part two was consisted of SQL programming and developing DB systems. 
-            After 9 months of enrollment I have finished the course and gained
+            The coruse had two parts: Database design where I learned how to draw and design databases 
+            using ER diagrams and ER language. Second part was consisted of SQL programming and developing 
+            database systems. After 9 months of enrollment I have finished the course and gained
             Oracle Database SQL Certified Associate Certification.</p>
         </div>
       </div><!-- /Timeline card end -->
@@ -206,7 +213,8 @@
             <h2>Management</h2>
           </div>
           <div class="timeline-date">October 2016</div>
-          <p>Enrolled on graduate studies of Management at Polytechnic of Šibenik.</p>
+          <p>Next level of formal education. I was enrolled on graduate studies of Management 
+            at Polytechnic of Šibenik.</p>
         </div>
       </div><!-- /Timeline card end -->
 
@@ -220,7 +228,7 @@
             <h2>Informatics Management</h2>
           </div>
           <div class="timeline-date">September 2016</div>
-          <p>Undergraduated from Polytechnic of Šibenik gaining the title bacc.oec.
+          <p>Undergraduated from Polytechnic of Šibenik gaining the title bacc.oec. and 180 ECTS points.
             Through these 3 years I was a memebr of IT section and student portal network.
             I have written several papers and presented them on conference Challenges of Today,
             organized by Polytechnic of Šibenik. I have also received Polytechnic award for being the best student.</p>
@@ -265,28 +273,12 @@
         <div class="timeline-point"></div>
         <!-- Timeline content -->
         <div class="timeline-content fadeInLeft">
-          <div class="timeline-image-header" id="ombudsman-background">
-            <h4>Polytechnic of Šibenik</h4>
-            <h2>Student Ombudsman</h2>
-          </div>
-          <div class="timeline-date">February 2016</div>
-          <p>The student ombudsman defends students and their rights when they are violated. 
-            He mediates communication between students and professors to find the most acceptable problem solution.
-            Mandate duration is one year.</p>
-        </div>
-      </div><!-- /Timeline card end -->
-
-      <!-- Timeline card -->
-      <div class="timeline-item">
-        <div class="timeline-point"></div>
-        <!-- Timeline content -->
-        <div class="timeline-content fadeInRight">
           <div class="timeline-image-header" id="web-design-background">
             <h2>Apartments Sandra</h2>
           </div>
           <div class="timeline-date">October 2015</div>
-          <p>Published web Apartments Sandra, a set of apartments in Šibenik, Croatia.
-            The page was developed in Wordpress form scratch.</p>
+          <p>This web was developed for a set of apartments located in city of šibenik.
+            The page was also developed form scratch for Wrodpress.</p>
             <a href="http://apartmanisandra.com/" target="_blank" class="visit-page-btn">Visit page</a>
         </div>
       </div><!-- /Timeline card end -->
@@ -295,13 +287,13 @@
       <div class="timeline-item">
         <div class="timeline-point"></div>
         <!-- Timeline content -->
-        <div class="timeline-content fadeInLeft">
+        <div class="timeline-content fadeInRight">
           <div class="timeline-image-header" id="web-design-background">
             <h2>Gambi d.o.o.</h2>
           </div>
           <div class="timeline-date">April 2015</div>
-          <p>Published web page for a local informatics company in Šibenik, Croatia.
-            The page was developed in Wordpress form scratch.</p>
+          <p>This was my first offically published web page. The web page was developed for a local 
+            informatics company in Šibenik, Croatia. The web was developed from scratch for Wordpress.</p>
             <a href="http://www.gambi.hr/" target="_blank" class="visit-page-btn">Visit page</a>
         </div>
       </div><!-- /Timeline card end -->
@@ -310,14 +302,14 @@
       <div class="timeline-item">
         <div class="timeline-point"></div>
         <!-- Timeline content -->
-        <div class="timeline-content fadeInRight">
+        <div class="timeline-content fadeInLeft">
           <div class="timeline-image-header" id="web-design-background">
             <h4>Algebra</h4>
             <h2>Web design</h2>
           </div>
           <div class="timeline-date">February 2015</div>
-          <p>Received Web design certification. At the course I was learning basics of Web design.
-            We used basic HTML and CSS language. Except HTML and CSS, the program also included
+          <p>Received Web design certification. At the course I was learning about basics of Web design.
+            We mostl used basic HTML and CSS language. Except HTML and CSS, the programme also included
             Adobe Fireworks CS6, Adobe Flash CS6, Adobe Dreamweaver CS6 and basics of Wordpress.</p>
         </div>
       </div><!-- /Timeline card end -->
@@ -326,14 +318,14 @@
       <div class="timeline-item">
         <div class="timeline-point"></div>
         <!-- Timeline content -->
-        <div class="timeline-content fadeInLeft">
+        <div class="timeline-content fadeInRight">
           <div class="timeline-image-header" id="teaching-background">
             <h4>Polytechnic of Šibenik</h4>
             <h2>Student Assistant</h2>
           </div>
           <div class="timeline-date">May 2014</div>
-          <p>As student assistant I was responsible to give students extra classes from Matematics 1,
-            Financial Matematics and World Wide Web Technologies at Polytechnic of Šibenik.</p>
+          <p>As student assistant I was responsible to give students extra classes from assigned subjects.
+            I was assigned to Matematics 1, Financial Matematics and World Wide Web Technologies.</p>
         </div>
       </div><!-- /Timeline card end -->
 
@@ -341,13 +333,14 @@
       <div class="timeline-item">
         <div class="timeline-point"></div>
         <!-- Timeline content -->
-        <div class="timeline-content fadeInRight">
+        <div class="timeline-content fadeInLeft">
           <div class="timeline-image-header" id="graduation-background">
             <h4>Polytechnic of Šibenik</h4>
             <h2>Informatics Management</h2>
           </div>
           <div class="timeline-date">October 2013</div>
-          <p>Enrolled on undergraduate study at Polytechnic of Šibenik.</p>
+          <p>At the start of my higher education I was enrolled on bachelor study of Informatics 
+            management at Polytechnic of Šibenik.</p>
         </div>
       </div><!-- /Timeline card end -->
     </div><!-- /Container end -->
@@ -413,19 +406,24 @@
         </div><!-- /Wrapper end -->
       </div><!-- /Container end -->
     </div><!-- /Skills section end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
     <script src="js/script.js"></script>
   </body>
   <footer>
     <div class="footer">
       <div class="footer-icons">
+        <!-- Gmail icon -->
+        <i class="fas fa-envelope"></i><span>bumbak.ivan@gmail.com</span>
+
         <!-- Instagram icon -->
-        <i class="fab fa-instagram"><span id="footer-icon-profile"> @the_bumbs</span></i>
+        <i class="fab fa-instagram"></i><span>@the_bumbs</span>
 
         <!-- Facebook icon -->
-        <i class="fab fa-facebook"><span id="footer-icon-profile"> /ivanbumbak</span></i>
+        <i class="fab fa-facebook"></i><span>/ivanbumbak</span>
 
         <!-- Twitter icon -->
-        <i class="fab fa-twitter"><span id="footer-icon-profile"> @theBumbs</span></i>
+        <i class="fab fa-twitter"></i><span>@theBumbs</span>
       </div>
     </div>
   </footer>

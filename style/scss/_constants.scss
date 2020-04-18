@@ -2,15 +2,16 @@
 
 //Colors
 $body-background-color: #f5f5f5; //Body background color
-$div-background-color: #fff; //Div background
+$body-background-color-even: #fefefe; //Every second section background color
+$white-color: #fefefe; //Div background
 $element-color: #0065a3; //Element main color
 $element-color-transparent: #0065a38f; //Element main color transparent
 $font-color: #1a1a1a; //Default text color
-$white-font-color: #fff; //Font color for element-color
 $hero-heading-font-color: #353535; //Heading font color hero section
-$subfont-color: #8b8b8b; //Subheadings and subtext font color
+$subfont-color: #9b9b9b; //Subheadings and subtext font color
 $link-default-color: #1a1a1a; //Default link color
 $button-color: #0066eb; //Color for button
+$box-shadow-coloring: rgba(37, 37, 37, 0.2); //Color style for box-shadows 
 
 //Link icon colors fade
 $mail-icon-color-fade: #dd4d40ce; //Fade email icon
@@ -43,5 +44,6 @@ $heading-font: 'Montserrat', sans-serif; //Heading fonts, navigation fonts, bold
 $text-font: 'Open Sans', sans-serif; //Subheading fonts, paragraph fonts, light fonts
 
 //Other
-$box-shadow-styling: 0 8px 8px rgba(37, 37, 37, 0.2); //Box shadow styling
+$box-shadow-header: 0 2px 4px $box-shadow-coloring; //Box shadow headar
+$box-shadow-timeline: 0 8px 8px $box-shadow-coloring; //Box shadow timeline card
 $linear-gradient: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); //Linear gradient for images

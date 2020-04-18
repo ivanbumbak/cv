@@ -1,23 +1,31 @@
 @import "constants";
 @import "mixins";
+@import "./icons/contact-icons";
+@import "./icons/skill-icons";
+@import "img-backgrounds";
 
 body {
-    background-color: $body-background-color;
     margin: 0;
     padding: 0;
+    background-color: $body-background-color;
 }
 
-h1 {
-    margin: 0 0 10px 0;
+h1, h2, h4 {
+    margin: 0;
 }
 
 p {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: $link-default-color;
+//Progress bar
+#progress-bar {
+    position: fixed;
+    width: 0;
+    height: 5px;
+    border: none;
+    background-color: $element-color;
+    z-index: 9999;
 }
 
 //Scrool to top
@@ -25,21 +33,23 @@ a {
     display: none;
     position: fixed;
     border: none;
-    bottom: 30px;
+    cursor: pointer;
+    bottom: 50px;
     right: 30px;
     z-index: 9999;
     i {
         font-size: 3.5em;
         color: $element-color-transparent;
+        @include unfade(ease-out);
         &:hover {
             color: $element-color;
+            @include fade(ease-in);
         }
     }
 }
 
 //Container default styling
 .container {
-    display: flex;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -47,12 +57,17 @@ a {
 
 //Wrapper class
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include w-flex-row;
     justify-content: space-evenly;
     width: 100%;
-    margin-bottom: 25px;
+}
+
+//Heading div on hero
+.profile-heading {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    box-shadow: $box-shadow-header;
 }
 
 //Landing page
@@ -60,16 +75,10 @@ a {
     @include nw-flex-column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #fefefe;
+    background-color: $body-background-color-even;
     margin-bottom: 15px;
     width: 100%;
     height: 85vh;
-}
-
-//Heading div element on hero
-.profile-heading {
-    width: 100%;
-    text-align: center;
 }
 
 #heading {
@@ -78,7 +87,6 @@ a {
     font-weight: 600;
     color: $hero-heading-font-color;
     padding: 15px 0 0 0;
-    margin: 0;
 }
 
 #subheading {
@@ -86,7 +94,6 @@ a {
     font-size: 1.5em;
     font-weight: 300;
     padding: 0 0 15px 0;
-    margin: 0;
     color: $subfont-color;
 }
 
@@ -101,7 +108,7 @@ a {
     margin: 25px;
 }
 
-//Profile biogrpahy div element on hero
+//Profile biography div on hero
 .profile-bio {
     margin-top: 25px;
 }
@@ -111,7 +118,7 @@ a {
     font-family: $heading-font;
     font-size: 1.55em;
     font-weight: 600;
-    color: $hero-heading-font-color;
+    color: $subfont-color;
 }
 
 //Short biography
@@ -128,9 +135,13 @@ a {
     transform: translateX(-200px);
     @include fade(ease-in);
     p {
-        font-family: $text-font;
-        font-size: 1.5em;
-        padding: 5px 35px;
+        font-family: $heading-font;
+        font-size: 1.25em;
+        font-weight: 800;
+        color: $subfont-color;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 16px;
     }
     &.show {
         visibility: visible;
@@ -146,56 +157,11 @@ a {
     }
 }
 
-#email-icon {
-    color: $mail-icon-color-fade;
-    @include unfade(ease-out);
-    &:hover {
-        color: $mail-icon-color;
-        @include fade(ease-in);
-    }
-}
-
-#linkedin-icon {
-    color: $linkedin-icon-color-fade;
-    @include unfade(ease-out);
-    &:hover {
-        color: $linkedin-icon-color;
-        @include fade(ease-in);
-    }
-}
-
-#github-icon {
-    color: $github-icon-color-fade;
-    @include unfade(ease-out);
-    &:hover {
-        color: $github-icon-color;
-        @include fade(ease-in);
-    }
-}
-
-#instagram-icon {
-    color: $instagram-icon-color-fade;
-    @include unfade(ease-out);
-    &:hover {
-        color: $instagram-icon-color;
-        @include fade(ease-in);
-    }
-}
-
-#facebook-icon {
-    color: $facebook-icon-color-fade;
-    @include unfade(ease-out);
-    &:hover {
-        color: $facebook-icon-color;
-        @include fade(ease-in);
-    }
-}
-
 //Timeline section
 .timeline-section {
     position: relative;
     background-color: $body-background-color;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     &::before {
         content: '';
         background-color: $element-color-transparent;
@@ -211,7 +177,7 @@ a {
 .timeline-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 //Timeline item
@@ -221,34 +187,6 @@ a {
     &:nth-child(even) {
         .timeline-content {
             float: right;
-        }
-
-        .timeline-image-header {
-            height: 200px;
-            position: relative;
-            border-radius: 5px 5px 0 0;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            h2 {
-                font-family: $heading-font;
-                position: absolute;
-                margin: 0;
-                padding: 0 10px 0 10px;
-                bottom: 5px;
-                left: 0;
-            }
-        
-            h4 {
-                font-family: $text-font;
-                position: absolute;
-                bottom: 30px;
-                left: 0;
-            }
-        }
-
-        .timeline-content {
-            margin-left: 35px;
             &::after {
                 content: '';
                 position: absolute;
@@ -260,16 +198,6 @@ a {
                 margin-left: -5px;
                 border-width: 10px 15px 10px 0;
                 border-color: transparent $element-color transparent transparent;
-            }
-            h2 {
-                margin-bottom: 0;
-                padding: 10px 10px 0 10px;
-            }
-
-            h4 {
-                margin-top: 0;
-                margin-bottom: 0;
-                padding: 0 10px 0 10px;
             }
         }
     }
@@ -299,59 +227,23 @@ a {
 	position: relative;
     border-radius: 5px 5px 0 0;
     h2 {
-        font-family: $text-font;
-        color: #fefefe;
+        font-family: $heading-font;
+        color: $white-color;
         position: absolute;
-        margin: 0;
         padding: 0 10px 0 10px !important;
 		bottom: 5px;
 		left: 0;
     }
 
     h4 {
-        font-family: $text-font;
-        color: #fefefe;
         position: absolute;
-        margin: 0;
+        font-family: $text-font;
+        font-weight: 300;
+        color: $white-color;
 		bottom: 30px;
-		left: 0;
+        left: 0;
+        padding: 0 0 0 10px;
     }
-}
-
-//Timeline cards background
-#code-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/code.png);
-}
-
-#graduation-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/graduation.png);
-}
-
-#erasmus-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/erasmus.png);
-}
-
-#it-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/it.png);
-}
-
-#ombudsman-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/ombudsman.png);
-}
-
-#web-design-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/web-design.png);
-}
-
-#teaching-background {
-    @include cover-background;
-    background-image: $linear-gradient, url(/img/teaching.png);
 }
 
 //Timeline content
@@ -360,8 +252,8 @@ a {
     width: 40%;
     margin: 0 90px;
     border-radius: 5px;
-    background-color: $div-background-color;
-    box-shadow: $box-shadow-styling;
+    background-color: $white-color;
+    box-shadow: $box-shadow-timeline;
     &::after {
         content: '';
         position: absolute;
@@ -374,25 +266,11 @@ a {
         border-width: 10px 0 10px 15px;
         border-color: transparent transparent transparent $element-color;
     }
-    
-    h2 {
-        font-family: $heading-font;
-        margin: 0;
-        padding: 10px 0 0 10px;
-    }
-
-    h4 {
-        font-family: $text-font;
-        font-weight: 300;
-        margin: 0;
-        padding: 0 0 0 10px;
-    }
 
     p {
         font-family: $text-font;
         font-size: 14px;
         text-align: justify;
-        margin: 0;
         padding: 10px;
         line-height: 1.5;
     }
@@ -401,31 +279,33 @@ a {
 //Timeline item date
 .timeline-date {
     display: inline-block;
-    font-family: $heading-font;
-    color: $white-font-color;
+    font-family: $text-font;
+    font-weight: 300;
+    color: $white-color;
+    border: 1px solid $white-color;
+    border-radius: 5px;
     font-size: 0.8em;
-    background-color: $element-color;
-    padding: 10px;
-    border-radius: 0 5px 0 0;
+    padding: 2px 8px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 4px;
+    right: 4px;
 }
 
 //Timeline item button for visiting projects
 .visit-page-btn {
     display: inline-block;
-    border: 1px solid $button-color;
-    font-family: $heading-font;
-    color: $white-font-color;
+    font-family: $text-font;
+    color: $white-color;
     font-size: 1em;
+    text-decoration: none;
     background-color: $button-color;
     border-radius: 5px;
-    padding: 10px;
+    box-shadow: $box-shadow-header;
+    padding: 6px 10px;
     margin: 10px;
     &:hover {
         color: $button-color;
-        background-color: $div-background-color;
+        background-color: $white-color;
     }
 }
 
@@ -434,71 +314,21 @@ a {
     width: 100%;
     text-align: center;
     padding-top: 25px;
-    background-color: $div-background-color;
+    background-color: $body-background-color-even;
     h1 {
         font-family: $heading-font;
         font-size: 2.5em;
         text-transform: uppercase;
-        margin: 0;
     }
 }
 
 //Section fifth default styling
 .section-fifth {
-    @include nw-flex-row;
-    justify-content: space-around;
-    align-items: flex-start;
     width: 15%;
     margin: 30px;
     i {
         font-size: 3.5em;
     }
-
-    p {
-        font-family: $text-font;
-        font-size: 1.5em;
-    }
-}
-
-//Skills icon coloring
-#html-icon {
-    color: $html-icon-color;
-}
-
-#css-icon {
-    color: $css-icon-color;
-}
-
-#sass-icon {
-    color: $sass-icon-color;
-}
-
-#wordpress-icon {
-    color: $wordpress-icon-color;
-}
-
-#git-icon {
-    color: $git-icon-color;
-}
-
-#microsoft-icon {
-    color: $microsoft-icon-color;
-}
-
-#database-icon {
-    color: $database-icon-color;
-}
-
-#java-icon {
-    color: $java-icon-color;
-}
-
-#teaching-icon {
-    color: $teaching-icon-color;
-}
-
-#teamwork-icon {
-    color: $teamwork-icon-color;
 }
 
 //Footer default styling
@@ -510,15 +340,20 @@ a {
     background-color: $body-background-color;
     padding: 15px 0;
     i {
-        padding: 0 10px;
+        padding: 0 3px 0 10px;
         font-size: 1.25em;
+        font-weight: 300;
         color: $subfont-color;
     }
-}
 
-//Footer social icon profile name
-#footer-icon-profile {
-    font-family: $text-font;
-    font-size: 14px;
-    color: $subfont-color;
+    span {
+        font-family: $text-font;
+        font-size: 14px;
+        color: $subfont-color;
+    }
+
+    .footer-icons {
+        @include nw-flex-row;
+        align-items: center;
+    }
 }

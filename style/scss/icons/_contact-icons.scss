@@ -1,0 +1,48 @@
+// _contact-icons.scss
+@import "../constants";
+@import "../mixins";
+
+#email-icon {
+    color: $mail-icon-color-fade;
+    @include unfade(ease-out);
+    &:hover {
+        color: $mail-icon-color;
+        @include fade(ease-in);
+    }
+}
+
+#linkedin-icon {
+    color: $linkedin-icon-color-fade;
+    @include unfade(ease-out);
+    &:hover {
+        color: $linkedin-icon-color;
+        @include fade(ease-in);
+    }
+}
+
+#github-icon {
+    color: $github-icon-color-fade;
+    @include unfade(ease-out);
+    &:hover {
+        color: $github-icon-color;
+        @include fade(ease-in);
+    }
+}
+
+#instagram-icon {
+    color: $instagram-icon-color-fade;
+    @include unfade(ease-out);
+    &:hover {
+        color: $instagram-icon-color;
+        @include fade(ease-in);
+    }
+}
+
+#facebook-icon {
+    color: $facebook-icon-color-fade;
+    @include unfade(ease-out);
+    &:hover {
+        color: $facebook-icon-color;
+        @include fade(ease-in);
+    }
+}

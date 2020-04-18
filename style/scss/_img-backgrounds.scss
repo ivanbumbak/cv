@@ -1,0 +1,29 @@
+// _img-backgrounds.scss
+/* Styling timline header image backgrounds */
+
+@import "constants";
+@import "mixins";
+
+#code-background {
+    @include cover-background('/img/code.png');
+}
+
+#graduation-background {
+    @include cover-background('/img/graduation.png');
+}
+
+#erasmus-background {
+    @include cover-background('/img/erasmus.png');
+}
+
+#it-background {
+    @include cover-background('/img/it.png');
+}
+
+#web-design-background {
+    @include cover-background('/img/web-design.png');
+}
+
+#teaching-background {
+    @include cover-background('/img/teaching.png');
+} 
