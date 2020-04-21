@@ -22,6 +22,12 @@
     flex-wrap: nowrap;
 }
 
+@mixin w-flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 //Unfade color on social icons
 @mixin unfade($unfade) {
     -webkit-transition: $unfade;
@@ -53,3 +59,5 @@
     background-repeat: no-repeat;
     background-image: $linear-gradient, url($img-path);
 }
+
+//Breakpoint mixins

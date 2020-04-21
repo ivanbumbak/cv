@@ -18,11 +18,6 @@ $(function(){
 
     if($(window).width() < 768) {
         $('.fadeInLeft').removeClass('fadeInLeft').addClass('fadeInRight');
-        // Check later
-        /* if($('.timeline-content').hasClass('fadeInLeft')) {
-            $('.timeline-content').removeClass('fadeInLeft').addClass('fadeInRight');
-        } */
-
     } else {
         scrollReveal.reveal('.fadeInLeft', fadeLeftOptions);
     }
