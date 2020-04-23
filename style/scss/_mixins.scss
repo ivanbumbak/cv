@@ -61,3 +61,38 @@
 }
 
 //Breakpoint mixins
+@mixin xl-devices {
+    @media screen and (max-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin m-devices {
+    @media screen and (max-width: $breakpoint-m) {
+        @content;
+    }
+}
+
+@mixin s-devices {
+    @media screen and (max-width: $breakpoint-s) {
+        @content;
+    }
+}
+
+@mixin xs-devices {
+    @media screen and (max-width: $breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin xxs-devices {
+    @media screen and (max-width: $breakpoint-xxs) {
+        @content;
+    }
+}
+
+@mixin lowest-devices {
+    @media screen and (max-width: $breakpoint-lowest) {
+        @content;
+    }
+}

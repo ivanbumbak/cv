@@ -77,6 +77,18 @@ p {
     font-weight: 600;
     color: $hero-heading-font-color;
     padding-top: 15px;
+
+    @include xl-devices {
+        font-size: 2.2em;
+    }
+
+    @include m-devices {
+        font-size: 2em;
+    }
+
+    @include lowest-devices {
+        font-size: 1.8em;
+    }
 }
 
 #subheading {
@@ -85,6 +97,18 @@ p {
     font-weight: 300;
     padding-bottom: 15px;
     color: $subfont-color;
+
+    @include xl-devices {
+        font-size: 1.2em;
+    }
+
+    @include m-devices {
+        font-size: 1.1em;
+    }
+
+    @include lowest-devices {
+        font-size: 1em;
+    }
 }
 
 //Landing page
@@ -96,17 +120,51 @@ p {
     margin-bottom: 15px;
     width: 100%;
     height: 85vh;
+
+    @include xl-devices {
+        height: 80vh;
+    }
 }
 
 //Profile div element on hero
 .profile {
     display: flex;
+
+    @include xs-devices {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.profile-img {
+    @include xl-devices {
+        width: 35%;
+    }
+
+    @include xs-devices {
+        width: 70%;
+        text-align: center;
+    }
+
+    @include lowest-devices {
+        width: 60%;
+    }
 }
 
 #avatar {
     border: 2px solid $element-color;
     border-radius: 50%;
     margin: 25px;
+
+    @include xl-devices {
+        width: 75%;
+        margin-right: 0;
+    }
+
+    @include xs-devices {
+        width: 80%;
+        margin: 0;
+    }
 }
 
 //Profile biography div on hero
@@ -120,6 +178,10 @@ p {
     font-size: 1.55em;
     font-weight: 600;
     color: $subfont-color;
+
+    @include xl-devices {
+        font-size: 1.4em;
+    }
 }
 
 //Short biography
@@ -127,6 +189,14 @@ p {
     font-family: $text-font;
     font-size: 1.35em;
     line-height: 1.5;
+
+    @include xl-devices {
+        font-size: 1.1em;
+    }
+
+    @include lowest-devices {
+        font-size: 0.95em;
+    }
 }
 
 //Contant on hero
@@ -143,6 +213,14 @@ p {
         text-transform: uppercase;
         text-align: center;
         padding-bottom: 16px;
+
+        @include m-devices {
+            font-size: 1.15em;
+        }
+
+        @include lowest-devices {
+            font-size: 1em;
+        }
     }
     &.show {
         visibility: visible;
@@ -155,6 +233,21 @@ p {
     i {
         font-size: 2.6em;
         margin: 0 35px;
+
+        @include xl-devices {
+            font-size: 2.15em;
+            margin: 0 25px;
+        }
+
+        @include m-devices {
+            font-size: 2em;
+            margin: 0 20px;
+        }
+
+        @include lowest-devices {
+            font-size: 1.8em;
+            margin: 0 15px;
+        }
     }
 }
 
@@ -320,6 +413,14 @@ p {
         font-family: $heading-font;
         font-size: 2.5em;
         text-transform: uppercase;
+
+        @include m-devices {
+            font-size: 2.25em;
+        }
+
+        @include xs-devices {
+            font-size: 2em;
+        }
     }
 }
 
@@ -328,8 +429,32 @@ p {
     width: 15%;
     margin: 30px;
 
+    @include m-devices {
+        margin: 20px;
+    }
+
+    @include s-devices {
+        margin: 15px;
+    }
+
+    @include xs-devices {
+        margin: 10px;
+    }
+
     i {
         font-size: 3.5em;
+
+        @include m-devices {
+            font-size: 3em;
+        }
+
+        @include s-devices {
+            font-size: 2.8em;
+        }
+
+        @include xs-devices {
+            font-size: 2.5em;
+        }
     }
 }
 
@@ -341,6 +466,10 @@ p {
     width: 100%;
     background-color: $body-background-color;
     padding: 15px 0;
+
+    @include xxs-devices {
+        padding: 0;
+    }
 
     i {
         padding: 0 5px 0 10px;
@@ -358,5 +487,15 @@ p {
     .footer-icons {
         @include nw-flex-row;
         align-items: center;
+
+        @include xxs-devices {
+            flex-direction: column;
+        }
+    }
+}
+
+.footer-mobile-icon {
+    @include xxs-devices {
+        padding: 5px 0;
     }
 }
