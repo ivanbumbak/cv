@@ -35,8 +35,20 @@ p {
     border: none;
     cursor: pointer;
     bottom: 50px;
-    right: 30px;
+    right: 20px;
     z-index: 9999;
+
+    @include s-devices {
+        right: 15px;
+    }
+
+    @include xs-devices {
+        bottom: 120px;
+    }
+
+    @include old-devices {
+        right: 5px;
+    }
 
     i {
         font-size: 3.5em;
@@ -45,6 +57,10 @@ p {
         &:hover {
             color: $element-color;
             @include fade(ease-in);
+        }
+
+        @include s-devices {
+            font-size: 3em;
         }
     }
 }
@@ -86,7 +102,7 @@ p {
         font-size: 2em;
     }
 
-    @include lowest-devices {
+    @include mobile-devices {
         font-size: 1.8em;
     }
 }
@@ -106,7 +122,7 @@ p {
         font-size: 1.1em;
     }
 
-    @include lowest-devices {
+    @include mobile-devices {
         font-size: 1em;
     }
 }
@@ -123,6 +139,10 @@ p {
 
     @include xl-devices {
         height: 80vh;
+    }
+
+    @include old-devices {
+        height: 100vh;
     }
 }
 
@@ -146,7 +166,7 @@ p {
         text-align: center;
     }
 
-    @include lowest-devices {
+    @include mobile-devices {
         width: 60%;
     }
 }
@@ -194,8 +214,12 @@ p {
         font-size: 1.1em;
     }
 
-    @include lowest-devices {
+    @include mobile-devices {
         font-size: 0.95em;
+    }
+
+    @include old-devices {
+        font-size: 0.85em;
     }
 }
 
@@ -218,8 +242,12 @@ p {
             font-size: 1.15em;
         }
 
-        @include lowest-devices {
+        @include mobile-devices {
             font-size: 1em;
+        }
+
+        @include old-devices {
+            font-size: 0.9em;
         }
     }
     &.show {
@@ -244,9 +272,13 @@ p {
             margin: 0 20px;
         }
 
-        @include lowest-devices {
+        @include mobile-devices {
             font-size: 1.8em;
             margin: 0 15px;
+        }
+
+        @include old-devices {
+            font-size: 1.6em;
         }
     }
 }
@@ -264,6 +296,10 @@ p {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+
+        @include xs-devices {
+            left: 5%;
+        }
     }
 }
 
@@ -300,6 +336,10 @@ p {
         display: block;
         clear: both;
     }
+
+    @include xs-devices {
+        padding: 15px 0;
+    }
 }
 
 //Timeline point
@@ -313,6 +353,10 @@ p {
     left: 50%;
     margin-top: 9px;
     margin-left: -12px;
+
+    @include xs-devices {
+        left: 5%;
+    }
 }
 
 //Timeline item heading image
@@ -321,6 +365,22 @@ p {
 	position: relative;
     border-radius: 5px 5px 0 0;
 
+    @include s-devices {
+        height: 175px;
+    }
+
+    @include xxs-devices {
+        height: 150px;
+    }
+
+    @include mobile-devices {
+        height: 125px;
+    }
+
+    @include old-devices {
+        height: 100px;
+    }
+
     h2 {
         font-family: $heading-font;
         color: $white-color;
@@ -328,6 +388,18 @@ p {
         padding: 0 10px 0 10px !important;
 		bottom: 5px;
         left: 0;
+
+        @include xs-devices {
+            font-size: 21px;
+        }
+
+        @include xxs-devices {
+            font-size: 17px;
+        }
+
+        @include old-devices {
+            font-size: 15px;
+        }
     }
 
     h4 {
@@ -338,6 +410,15 @@ p {
 		bottom: 30px;
         left: 0;
         padding: 0 0 0 10px;
+
+        @include xs-devices {
+            font-size: 16px;
+        }
+
+        @include xxs-devices {
+            font-size: 12px;
+            bottom: 25px;
+        }
     }
 }
 
@@ -360,6 +441,48 @@ p {
         margin-right: -5px;
         border-width: 10px 0 10px 15px;
         border-color: transparent transparent transparent $element-color;
+
+        @include xs-devices {
+            left: -15px;
+            margin-left: -5px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent $element-color transparent transparent;
+        }
+    }
+
+    @include xl-devices {
+        margin: 0 80px;
+    }
+
+    @include m-devices {
+        margin: 0 60px;
+    }
+
+    @include s-devices {
+        width: 35%;
+        margin: 0 75px;
+    }
+
+    @include xs-devices {
+        width: 75%;
+        float: right;
+    }
+
+    @include xxs-devices {
+        width: 75%;
+        margin: 0 65px;
+    }
+
+    @include xxxs-devices {
+        margin: 0 50px;
+    }
+
+    @include mobile-devices {
+        width: 70%;
+    }
+
+    @include old-devices {
+        margin: 0 45px;
     }
     
     p {
@@ -367,6 +490,14 @@ p {
         font-size: 14px;
         padding: 10px;
         line-height: 1.5;
+
+        @include mobile-devices {
+            font-size: 13px;
+        }
+
+        @include old-devices {
+            font-size: 12px;
+        }
     }
 }
 
@@ -383,6 +514,10 @@ p {
     position: absolute;
     top: 4px;
     right: 4px;
+
+    @include old-devices {
+        font-size: 0.7em;
+    }
 }
 
 //Timeline item button for visiting projects
@@ -400,6 +535,10 @@ p {
     &:hover {
         color: $button-color;
         background-color: $white-color;
+    }
+
+    @include old-devices {
+        font-size: 0.75em;
     }
 }
 
@@ -438,7 +577,7 @@ p {
     }
 
     @include xs-devices {
-        margin: 10px;
+        margin: 20px;
     }
 
     i {
@@ -452,8 +591,8 @@ p {
             font-size: 2.8em;
         }
 
-        @include xs-devices {
-            font-size: 2.5em;
+        @include old-devices {
+            font-size: 2.25em;
         }
     }
 }
@@ -467,7 +606,7 @@ p {
     background-color: $body-background-color;
     padding: 15px 0;
 
-    @include xxs-devices {
+    @include xs-devices {
         padding: 0;
     }
 
@@ -488,14 +627,14 @@ p {
         @include nw-flex-row;
         align-items: center;
 
-        @include xxs-devices {
+        @include xs-devices {
             flex-direction: column;
         }
     }
 }
 
 .footer-mobile-icon {
-    @include xxs-devices {
+    @include xs-devices {
         padding: 5px 0;
     }
 }

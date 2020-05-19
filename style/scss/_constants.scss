@@ -51,7 +51,9 @@ $linear-gradient: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); //L
 //Breakpoints
 $breakpoint-xl: 1200px;
 $breakpoint-m: 992px;
-$breakpoint-s: 768px;
-$breakpoint-xs: 576px;
-$breakpoint-xxs: 420px;
-$breakpoint-lowest: 370px;
+$breakpoint-s: 840px;
+$breakpoint-xs: 660px;
+$breakpoint-xxs: 500px;
+$breakpoint-xxxs: 450px;
+$breakpoint-mobile: 380px;
+$breakpoint-oldies: 320px;

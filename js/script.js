@@ -16,7 +16,7 @@ $(function(){
         duration: 900,
     };
 
-    if($(window).width() < 768) {
+    if($(window).width() < 661) {
         $('.fadeInLeft').removeClass('fadeInLeft').addClass('fadeInRight');
     } else {
         scrollReveal.reveal('.fadeInLeft', fadeLeftOptions);
